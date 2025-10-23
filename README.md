@@ -1,4 +1,4 @@
-# html-starter
-Стартовый шаблон для верстки проекта
+# Aliance Production
+Новый проект Aliance Production
 
 ### Автор: Максим Кочуков
