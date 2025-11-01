@@ -74,7 +74,7 @@ header {
   border-right: 1px solid rgba(235, 235, 240, 0.2);
 }
 
-.header-logo-image {
+.logo-svg {
   display: block;
 }
 
@@ -181,6 +181,7 @@ header {
 }
 
 .header-features-icon {
+  display: block;
   margin-bottom: 20px;
 }
 
