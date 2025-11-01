@@ -116,7 +116,7 @@ header {
 
 .header-button {
   padding: 34px 50px;
-  height: 94px;
+  height: 100%;
 }
 
 .header-content {
@@ -133,7 +133,7 @@ header {
 .header-title {
   margin: 30px 0;
   max-width: 1080px;
-  font-family: 'Bebas Neue Regular';
+  font-family: 'Bebas Neue Regular', sans-serif;
   font-weight: 400;
   font-size: 80px;
   line-height: 120%;
@@ -177,4 +177,96 @@ header {
   font-size: 16px;
   line-height: 160%;
   color: #FFFFFF;
+}
+
+
+
+/* section steps */
+/* ============================================================ */
+.section {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.section-light {
+  background-color: #FFFFFF;
+}
+
+.section-title {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: 'Bebas Neue Regular', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+  color: #292d33;
+}
+
+.steps {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.steps-item {
+  max-width: 330px;
+}
+
+.steps-num {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: 'Bebas Neue Regular', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #5c8ee5;
+}
+
+.steps-num::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ebebf0;
+}
+
+.steps-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 160%;
+  color: #292d33;
+}
+
+.steps-text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828a99;
+}
+
+.steps-link {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: #5c8ee5;
+  text-decoration: none;
+}
+
+.steps-link::before {
+  content: "";
+  margin-right: 20px;
+  width: 40px;
+  height: 1px;
+  background-color: #5c8ee5;
 }
