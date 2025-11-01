@@ -27,6 +27,7 @@ body {
 /* header */
 /* ============================================================ */
 header {
+  padding-top: 94px;
   min-height: 100vh;
 }
 
@@ -49,11 +50,23 @@ header {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
   display: flex;
-  border-bottom: 1px solid rgba(235, 235, 240, 0.2);
   align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.2);
   color: #FFFFFF;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+
+.navbar-light {
+  background-color: #fafbfc;
+  color: #292d33;
+}
+
+.navbar-light .header-logo-path {
+  fill: #292d33;
 }
 
 .header-logo {
@@ -61,7 +74,7 @@ header {
   border-right: 1px solid rgba(235, 235, 240, 0.2);
 }
 
-.logo-light {
+.header-logo-image {
   display: block;
 }
 
