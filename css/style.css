@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
   background-color: #FFFFFF;
@@ -20,20 +24,16 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 90rem;
 }
 
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-shrink: 0;
-  gap: 10px;
-  padding: 25px 60px;
+  padding: 1.5625rem 3.75rem;
   border: none;
   font-family: "Noto Sans", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
   color: #FFFFFF;
   background-color: #5C8EE5;
@@ -49,7 +49,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 94px;
+  height: 5.875rem;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
   color: #FFFFFF;
   z-index: 2;
@@ -57,7 +57,7 @@ body {
 }
 
 .navbar-light {
-  height: 74px;
+  height: 4.625rem;
   color: #292d33;
   background-color: #fafbfc;
 }
@@ -66,16 +66,71 @@ body {
   fill: #292d33;
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  padding: 0 3.125rem;
+  height: 100%;
+  border-right: 1px solid rgba(235, 235, 240, 0.2);
+}
+
+.logo-svg {
+  display: block;
+  width: 8.75rem;
+  height: 2.75rem;
+}
+
+.header-nav {
+  display: flex;
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 3.125rem;
+  list-style: none;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 3.125rem;
+}
+
+.header-nav-link {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: inherit;
+  word-spacing: 0.3px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
+.header-phone {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+  margin-right: 3.125rem;
+}
+
+.header-phone-link {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 160%;
+  color: inherit;
+  text-decoration: none;
+}
+
 .navbar-button {
-  padding: 0 45px;
+  padding: 0 2.8125rem;
   height: 100%;
 }
+
 
 
 /* header */
 /* ============================================================ */
 header {
-  padding-top: 94px;
+  padding-top: 5.875rem;
   min-height: 100vh;
 }
 
@@ -97,82 +152,34 @@ header {
   background-color: rgba(41, 45, 51, 0.6);
 }
 
-.header-logo {
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  padding: 0 50px;
-  height: 100%;
-  border-right: 1px solid rgba(235, 235, 240, 0.2);
-}
-
-.logo-svg {
-  display: block;
-}
-
-.header-nav {
-  display: flex;
-  flex-basis: 100%;
-  margin: 0;
-  padding: 0 50px;
-  list-style: none;
-}
-
-.header-nav-link {
-  margin-right: 50px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: inherit;
-  word-spacing: 0.3px;
-  letter-spacing: 0.2px;
-  text-decoration: none;
-}
-
-.header-phone {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-right: 50px;
-}
-
-.header-phone-link {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 160%;
-  color: inherit;
-  text-decoration: none;
-}
-
 .header-content {
   position: relative;
-  padding-top: 150px;
-  padding-left: 7px;
+  padding-top: 9.375rem;
+  padding-left: .4375rem;
 }
 
 .separator {
-  width: 150px;
+  width: 9.375rem;
   height: 2px;
   background-color: #5C8EE5;
 }
 
 .header-title {
-  margin-top: 23px;
-  margin-bottom: 38px;
-  max-width: 1080px;
+  margin-top: 1.4375rem;
+  margin-bottom: 2.375rem;
+  max-width: 67.5rem;
   font-family: 'Bebas Neue Regular', sans-serif;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 5rem;
   line-height: 120%;
   color: #FFFFFF;
 }
 
 .header-text {
-  margin-bottom: 50px;
-  max-width: 720px;
+  margin-bottom: 3.125rem;
+  max-width: 45rem;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
   color: #FFFFFF;
   letter-spacing: 0.1px;
@@ -182,14 +189,14 @@ header {
 .header-features {
   position: relative;
   margin: 0;
-  margin-top: 100px;
+  margin-top: 6.25rem;
   padding: 0;
   display: flex;
   list-style: none;
 }
 
 .header-features-item {
-  padding: 30px 50px;
+  padding: 1.875rem 3.125rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
@@ -199,13 +206,13 @@ header {
 
 .header-features-icon {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .header-features-text {
   margin: 0;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
   color: #FFFFFF;
 }
@@ -215,20 +222,20 @@ header {
 /* section steps */
 /* ============================================================ */
 .section {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
 }
 
 .section-steps {
-  padding-left: 15px;
+  padding-left: .9375rem;
 }
 
 .section-title {
-  margin-top: 24px;
-  margin-bottom: 50px;
+  margin-top: 1.5rem;
+  margin-bottom: 3.125rem;
   font-family: 'Bebas Neue Regular', sans-serif;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 120%;
   color: #292d33;
 }
@@ -242,16 +249,16 @@ header {
 }
 
 .steps-item {
-  width: 330px;
+  width: 20.625rem;
 }
 
 .steps-num {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 1.875rem;
   font-family: 'Bebas Neue Regular', sans-serif;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 120%;
   color: #5c8ee5;
 }
@@ -264,21 +271,21 @@ header {
 }
 
 .steps-title {
-  margin-top: 35px;
-  margin-bottom: 13px;
-  max-width: 300px;
+  margin-top: 2.1875rem;
+  margin-bottom: .8125rem;
+  max-width: 18.75rem;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 160%;
   color: #292d33;
 }
 
 .steps-text {
-  margin-top: 10px;
+  margin-top: .625rem;
   margin-bottom: 0;
-  max-width: 300px;
+  max-width: 18.75rem;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
   color: #828a99;
 }
@@ -286,9 +293,9 @@ header {
 .steps-link {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
   color: #5c8ee5;
   text-decoration: none;
@@ -296,8 +303,49 @@ header {
 
 .steps-link::before {
   content: "";
-  margin-right: 20px;
-  width: 40px;
+  margin-right: 1.25rem;
+  width: 2.5rem;
   height: 1px;
   background-color: #5c8ee5;
+}
+
+
+
+
+
+
+
+
+
+
+/* media */
+/* ============================================================ */
+@media (max-width: 1740px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1520px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1420px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1320px) {
+  html {
+    font-size: 11px;
+  }
 }
