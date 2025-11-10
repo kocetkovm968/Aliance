@@ -451,6 +451,7 @@ header {
     width: 100%;
     height: 1px;
     background-color: #FFFFFF;
+    transition: transform 0.2s;
   }
 
   .burger-line:nth-child(2) {
@@ -459,6 +460,18 @@ header {
 
   .navbar-light .burger-line {
     background-color: #292D33;
+  }
+
+  .burger-close .burger-line:nth-child(2) {
+    display: none;
+  }
+
+  .burger-close .burger-line:first-child {
+    transform: rotate(45deg) translateY(9px);
+  }
+
+  .burger-close .burger-line:last-child {
+    transform: rotate(-45deg) translateY(-9px);
   }
 
   .mobile-menu {
@@ -533,15 +546,10 @@ header {
     margin-bottom: 10px;
   }
 
-  .mobile-menu-address {
-    font-size: 14px;
-    font-style: normal;
-    line-height: 160%;
-    color: #292d33;
-  }
-
+  .mobile-menu-address,
   .mobile-menu-mail {
     font-size: 14px;
+    font-style: normal;
     line-height: 160%;
     color: #292d33;
   }
