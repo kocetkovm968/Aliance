@@ -346,6 +346,7 @@ header {
 }
 
 
+
 @media (max-width: 1640px) {
 
   /* ============================== */
@@ -355,6 +356,7 @@ header {
 }
 
 
+
 @media (max-width: 1540px) {
 
   /* ============================== */
@@ -362,6 +364,7 @@ header {
     font-size: 13px;
   }
 }
+
 
 
 @media (max-width: 1460px) {
@@ -389,7 +392,8 @@ header {
 }
 
 
-@media (max-width: 1200px) {
+
+@media (max-width: 1240px) {
 
   /* ============================== */
   .container {
@@ -407,12 +411,18 @@ header {
   .navbar-button {
     padding: 0 1.5rem;
   }
+
+  .header {
+    padding-top: 5rem;
+  }
 }
 
 
 @media (max-width: 992px) {
 
   /* ============================== */
+  /* other styles */
+  /* ================= */
   html {
     font-size: 12px;
   }
@@ -430,11 +440,22 @@ header {
     display: none;
   }
 
+  .navbar-button .phone-svg {
+    display: block;
+    fill: #FFFFFF;
+  }
+
+  .navbar-button .button-text {
+    display: none;
+  }
+
+  /* style burger */
+  /* ================= */
   .burger {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 1.8rem;
+    justify-content: center;
+    padding: 0 28px;
     width: 80px;
     height: 100%;
     border: none;
@@ -444,14 +465,15 @@ header {
   }
 
   .burger-line {
-    width: 100%;
+    margin-bottom: 5px;
+    width: 20px;
     height: 1px;
     background-color: #FFFFFF;
     transition: transform 0.2s;
   }
 
   .burger-line:nth-child(2) {
-    width: 80%;
+    width: 15px;
   }
 
   .navbar-light .burger-line {
@@ -463,13 +485,15 @@ header {
   }
 
   .burger-close .burger-line:first-child {
-    transform: rotate(45deg) translateY(9px);
+    transform: rotate(45deg) translateY(4px);
   }
 
   .burger-close .burger-line:last-child {
-    transform: rotate(-45deg) translateY(-9px);
+    transform: rotate(-45deg) translateY(-4px);
   }
 
+  /* style mobile-menu */
+  /* ================= */
   .mobile-menu {
     position: fixed;
     inset: 0;
@@ -486,12 +510,12 @@ header {
   }
 
   .mobile-menu-top {
-    padding: 30px 15px;
+    padding: 2.5rem 1.25rem;
     border-bottom: 1px solid #ebebf0;
   }
 
   .mobile-menu-nav-item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 2.5rem;
   }
 
   .mobile-menu-nav-link {
@@ -502,12 +526,12 @@ header {
   }
 
   .mobile-submenu-list {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 1.6667rem;
+    padding-left: 1.6667rem;
   }
 
   .mobile-submenu-item:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: .8333rem;
   }
 
   .mobile-submenu-link {
@@ -517,15 +541,15 @@ header {
   }
 
   .mobile-menu-bottom {
-    padding: 0 15px;
-    padding-top: 30px;
+    padding: 0 1.25rem;
+    padding-top: 2.5rem;
   }
 
   .mobile-menu-phone {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 1.6667rem;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.6667rem;
     line-height: 160%;
     text-decoration: underline;
     text-decoration-skip-ink: none;
@@ -539,12 +563,12 @@ header {
   }
 
   .mobile-menu-info:not(:last-of-type) {
-    margin-bottom: 10px;
+    margin-bottom: .8333rem;
   }
 
   .mobile-menu-address,
   .mobile-menu-mail {
-    font-size: 14px;
+    font-size: 1.1667rem;
     font-style: normal;
     line-height: 160%;
     color: #292d33;
@@ -552,16 +576,66 @@ header {
 
   .mobile-menu-social {
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 1.25rem;
+    margin-top: 1.6667rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+  /* ============================== */
+  .container {
+    max-width: 40rem;
   }
 
-  .navbar-button .phone-svg {
-    display: block;
-    fill: #FFFFFF;
+  .navbar {
+    height: 5.6667rem;
   }
 
-  .navbar-button .button-text {
-    display: none;
+  .navbar-light {
+    height: 4rem;
+  }
+
+  .navbar-button {
+    padding: 0 2.3333rem;
+  }
+
+  .header {
+    padding-top: 5.6667rem;
+    ;
+  }
+
+  .header-content {
+    padding-top: 4.1667rem;
+  }
+
+  .header-title {
+    margin-top: 1.6667rem;
+    margin-bottom: .8333rem;
+    font-size: 4rem;
+  }
+
+  .mobile-menu {
+    padding-top: 4rem;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+
+  /* ============================== */
+  .container {
+    max-width: 92%;
+  }
+
+  .header-text {
+    margin-bottom: 2.5rem;
+  }
+
+  .header-features {
+    margin-top: 4.1667rem;
   }
 }
