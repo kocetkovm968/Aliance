@@ -155,7 +155,6 @@ a {
 /* ============================================================ */
 header {
   padding-top: 5.875rem;
-  min-height: 100vh;
 }
 
 .header-image {
@@ -219,12 +218,8 @@ header {
 
 .header-features-item {
   padding: 1.875rem 3.125rem;
-  max-width: 18rem;
+  min-height: 100%;
   border: 1px solid rgba(235, 235, 240, 0.2);
-}
-
-.header-features-item:not(:last-child) {
-  border-right: none;
 }
 
 .header-features-icon {
@@ -240,13 +235,29 @@ header {
   color: #FFFFFF;
 }
 
+.slider-controls {
+  display: none;
+  height: 44px;
+}
+
+.slider-button-prev,
+.slider-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+  height: 100%;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+  cursor: pointer;
+}
+
 
 
 /* section steps */
 /* ============================================================ */
 .section {
-  margin-top: 9.375rem;
-  margin-bottom: 9.375rem;
+  padding-top: 9.375rem;
+  padding-bottom: 9.375rem;
 }
 
 .section-title {
@@ -261,13 +272,11 @@ header {
 
 .steps {
   display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+  gap: 1.875rem;
 }
 
 .steps-item {
-  width: 20.625rem;
+  width: 20.625rem !important;
 }
 
 .steps-num {
@@ -414,6 +423,10 @@ header {
 
   .header {
     padding-top: 5rem;
+  }
+
+  .slider-controls {
+    display: flex;
   }
 }
 
@@ -587,7 +600,7 @@ header {
 
   /* ============================== */
   .container {
-    max-width: 40rem;
+    max-width: 45rem;
   }
 
   .navbar {
@@ -604,7 +617,6 @@ header {
 
   .header {
     padding-top: 5.6667rem;
-    ;
   }
 
   .header-content {
@@ -620,6 +632,11 @@ header {
   .mobile-menu {
     padding-top: 4rem;
   }
+
+  .section {
+  padding-top: 8.3333rem;
+  padding-bottom: 8.3333rem;
+}
 }
 
 
@@ -637,5 +654,9 @@ header {
 
   .header-features {
     margin-top: 4.1667rem;
+  }
+
+  .header-button {
+    width: 100%;
   }
 }
