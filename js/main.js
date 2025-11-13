@@ -38,13 +38,13 @@ burger.addEventListener('click', (event) => {
 });
 
 
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('.header .swiper', {
   speed: 400,
   autoHeight: true,
   slidesPerView: 1,
   navigation: {
-    nextEl: ".slider-button-next",
-    prevEl: ".slider-button-prev",
+    nextEl: ".header .slider-button-next",
+    prevEl: ".header .slider-button-prev",
   },
   breakpoints: {
     // when window width is >= 576px
@@ -62,6 +62,34 @@ const swiper = new Swiper('.swiper', {
     // when window width is >= 1200px
     1241: {
       slidesPerView: 5,
+    }
+  },
+});
+
+
+const swiper2 = new Swiper('.steps .swiper', {
+  speed: 400,
+  /* autoHeight: true, */
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".steps .slider-button-next",
+    prevEl: ".steps .slider-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 576px
+    485: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 768px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    // when window width is >= 1024px
+    1241: {
+      slidesPerView: 4,
+      spaceBetween: 30,
     }
   },
 });

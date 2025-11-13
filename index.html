@@ -213,15 +213,15 @@
   </header>
   <!-- /.header -->
 
-  <section class="section section-steps">
+  <section class="section steps">
     <div class="container">
       <div class="separator"></div>
       <h2 class="section-title">схема работы</h2>
 
       <!-- Основной блок слайдера -->
-      <div class="swiper">
+      <div class="swiper steps-slider">
         <!-- Обертка слайдера -->
-        <ol class="swiper-wrapper steps">
+        <ol class="swiper-wrapper steps-list">
           <!-- Слайды -->
           <li class="swiper-slide steps-item">
             <span class="steps-num">01</span>
@@ -257,11 +257,21 @@
         </ol>
 
         <!-- Кнопки навигации вперед/назад -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="slider-controls">
+          <div class="slider-button-prev">
+            <svg class="slider-controls-icon" width="30" height="20">
+              <use href="img/sprite.svg#arrow-prev"></use>
+            </svg>
+          </div>
+          <div class="slider-button-next">
+            <svg class="slider-controls-icon" width="30" height="20">
+              <use href="img/sprite.svg#arrow-next"></use>
+            </svg>
+          </div>
+        </div>
       </div>
 
-      <!-- <ol class="steps">
+      <!-- <ol class="steps-list">
         <li class="steps-item">
           <span class="steps-num">01</span>
           <h3 class="steps-title">Знакомство</h3>
