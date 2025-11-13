@@ -69,7 +69,6 @@ const swiper1 = new Swiper('.header .swiper', {
 
 const swiper2 = new Swiper('.steps .swiper', {
   speed: 400,
-  /* autoHeight: true, */
   slidesPerView: 1,
   navigation: {
     nextEl: ".steps .slider-button-next",
