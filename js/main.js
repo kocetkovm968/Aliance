@@ -1,17 +1,20 @@
 const navbar = document.querySelector('.navbar');
-const logo = document.querySelector('.logo-svg use');
+const logoLight = document.querySelector('.logo-light');
+const logoDark = document.querySelector('.logo-dark');
 const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.mobile-menu');
 
 
-const lightModeOn = (event) => { //функция изменения navbar на светлый
+const lightModeOn = (event) => { //функция изменения navbar на светлый вместе с логотипом
   navbar.classList.add('navbar-light');
-  logo.href.baseVal = 'img/sprite.svg#logo';
+  logoDark.style.display = 'block';
+  logoLight.style.display = 'none';
 };
 
-const lightModeOff = (event) => { //функция изменения navbar на исходный
+const lightModeOff = (event) => { //функция изменения navbar на исходный вместе с логотипом
   navbar.classList.remove('navbar-light');
-  logo.href.baseVal = 'img/sprite.svg#logo-light';
+  logoDark.style.display = 'none';
+  logoLight.style.display = 'block';
 };
 
 const openMenu = (event) => { //функция открывания меню

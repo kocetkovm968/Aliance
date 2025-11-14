@@ -100,6 +100,10 @@ a {
   height: 2.75rem;
 }
 
+.logo-dark {
+  display: none;
+}
+
 .header-nav {
   display: flex;
   flex-basis: 100%;
