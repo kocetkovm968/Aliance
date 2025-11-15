@@ -445,6 +445,56 @@ header {
 
 
 
+/* section trademark */
+/* ============================================================ */
+.trademark-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trademark-card {
+  flex-basis: 50%;
+  display: grid;
+  grid-template-areas:
+    "icon title"
+    "icon text";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 2.60vw;
+  padding: 3.125rem;
+  border: 1px solid #ebebf0;
+}
+
+.trademark-card-icon {
+  grid-area: icon;
+  width: 11.25rem;
+  height: 11.25rem;
+  fill: #828a99;
+}
+
+.trademark-card-title {
+  grid-area: title;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  color: #292d33;
+}
+
+.trademark-card-text {
+  grid-area: text;
+  margin-top: 10px;
+  max-width: 360px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+
+
+
+
+
+
 
 
 
@@ -465,6 +515,18 @@ header {
 
 .card:hover .card-title {
   color: #5c8ee5;
+}
+
+.trademark-card:hover {
+  border: 1px solid #5c8ee5;
+}
+
+.trademark-card:hover .trademark-card-title {
+  color: #5c8ee5;
+}
+
+.trademark-card:hover .trademark-card-icon {
+  fill: #5c8ee5;
 }
 
 
@@ -562,6 +624,17 @@ header {
   .card {
     min-height: 429px;
   }
+
+  .trademark-card {
+    grid-template-areas:
+      "icon title"
+      "text text";
+    padding: 30px;
+  }
+
+  .trademark-card-title {
+    font-size: 20px;
+  }
 }
 
 
@@ -607,6 +680,7 @@ header {
   .section-title {
     margin-top: 20px;
     margin-bottom: 30px;
+    font-size: 36px;
   }
 
   .steps-title {
@@ -641,6 +715,25 @@ header {
   .card-content {
     padding-top: 20px;
     padding-left: 30px;
+  }
+
+  .trademark-card {
+    column-gap: 30px;
+    padding: 0;
+    padding-left: 30px;
+  }
+
+  .trademark-card-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .trademark-card-title {
+    line-height: 130%;
+  }
+
+  .trademark-card-text {
+    font-size: 14px;
   }
 
   /* style burger */
@@ -813,6 +906,18 @@ header {
   .mobile-menu {
     padding-top: 4rem;
   }
+
+  .trademark-cards {
+    flex-direction: column;
+  }
+
+  .trademark-card {
+    padding: 30px;
+  }
+
+  .trademark-card-text {
+    max-width: 100%;
+  }
 }
 
 
@@ -838,5 +943,9 @@ header {
 
   .card {
     --elems: 1;
+  }
+
+  .trademark-card-text {
+    margin-top: 20px;
   }
 }
