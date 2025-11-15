@@ -33,6 +33,19 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 .container {
   margin: 0 auto;
   max-width: 90rem;
@@ -106,10 +119,18 @@ a {
 
 .header-nav {
   display: flex;
+  align-items: center;
   flex-basis: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   padding-left: 3.125rem;
+}
+
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .header-nav-item:not(:last-child) {
@@ -117,12 +138,27 @@ a {
 }
 
 .header-nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
   font-weight: 400;
   font-size: 1rem;
   line-height: 160%;
   color: inherit;
   word-spacing: 0.3px;
   letter-spacing: 0.2px;
+}
+
+.header-nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  background-color: #5c8ee5;
+  transform: scaleX(0);
+  transition: transform 0.2s;
 }
 
 .header-phone {
@@ -268,7 +304,6 @@ header {
 /* ============================================================ */
 .section {
   padding-top: 150px;
-  padding-bottom: 150px;
 }
 
 .section-title {
@@ -340,9 +375,10 @@ header {
 .steps-link::before {
   content: "";
   margin-right: 1.25rem;
-  width: 2.5rem;
+  width: 40px;
   height: 1px;
   background-color: #5c8ee5;
+  transition: width 0.2s;
 }
 
 .steps .slider-controls {
@@ -359,9 +395,77 @@ header {
 
 
 
+/* section production */
+/* ============================================================ */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  --elems: 3;
+
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / var(--elems));
+  min-height: 37.0625rem;
+  border: 1px solid #ebebf0;
+  transition: border 0.2s;
+}
+
+.card-content {
+  padding-top: 2.5rem;
+  padding-left: 3.125rem;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  color: #292d33;
+  transition: color 0.2s;
+}
+
+.card-text {
+  margin-bottom: auto;
+  max-width: 310px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+
+.card-image {
+  display: block;
+  align-self: flex-end;
+  margin-top: auto;
+  max-width: 100%;
+}
 
 
 
+
+
+
+
+/* hover */
+/* ============================================================ */
+.header-nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.steps-link:hover::before {
+  width: 60px;
+}
+
+.card:hover {
+  border: 1px solid #5c8ee5;
+}
+
+.card:hover .card-title {
+  color: #5c8ee5;
+}
 
 
 
@@ -454,6 +558,10 @@ header {
   .steps-item {
     max-width: 100%;
   }
+
+  .card {
+    min-height: 429px;
+  }
 }
 
 
@@ -494,7 +602,6 @@ header {
 
   .section {
     padding-top: 100px;
-    padding-bottom: 100px;
   }
 
   .section-title {
@@ -511,6 +618,29 @@ header {
   .steps-text,
   .steps-link {
     font-size: 14px;
+  }
+
+  .card {
+    --elems: 2;
+  }
+
+  .card-image {
+    max-height: 220px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .card-text {
+    max-width: 285px;
+    font-size: 14px;
+  }
+
+  .card-content {
+    padding-top: 20px;
+    padding-left: 30px;
   }
 
   /* style burger */
@@ -683,8 +813,6 @@ header {
   .mobile-menu {
     padding-top: 4rem;
   }
-
-
 }
 
 
@@ -706,5 +834,9 @@ header {
 
   .header-button {
     width: 100%;
+  }
+
+  .card {
+    --elems: 1;
   }
 }
