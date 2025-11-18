@@ -495,7 +495,6 @@ header {
 /* ============================================================ */
 .founder-wrapper {
   display: flex;
-  /* column-gap: 120px; */
   column-gap: 6.25vw;
 }
 
@@ -524,6 +523,63 @@ header {
 }
 
 
+/* section clients */
+/* ============================================================ */
+.clients-wrapper {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.clients-content {
+  max-width: 43.125rem;
+}
+
+.clients-title {
+  margin-bottom: 2.375rem;
+}
+
+.clients-content-wrapper {
+  display: flex;
+  gap: 3.125rem;
+}
+
+.clients-content-item {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #292d33;
+}
+
+.clients-content-item:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.clients-logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  padding-top: 32px;
+}
+
+.clients-logo-item {
+  --elems: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / var(--elems));
+  min-height: 10rem;
+  border: 1px solid #ebebf0;
+  filter: grayscale(100%);
+}
+
+.clients-logo-icon {
+  width: 4.375rem;
+  height: 4.375rem;
+}
 
 
 
@@ -560,6 +616,10 @@ header {
 
 .trademark-card:hover .trademark-card-icon {
   fill: #5c8ee5;
+}
+
+.clients-logo-item:hover {
+  filter: grayscale(0);
 }
 
 
@@ -807,6 +867,36 @@ header {
     font-size: 14px;
   }
 
+  .clients-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .clients-content {
+    max-width: 100%;
+  }
+
+  .clients-content-list {
+    width: 50%;
+  }
+
+  .clients-content-item {
+    font-size: 14px;
+  }
+
+  .clients-logo {
+    padding-top: 0;
+  }
+
+  .clients-logo-item {
+    min-height: 110px;
+  }
+
+  .clients-logo-icon {
+    width: 50px;
+    height: 50px;
+  }
+
   /* style burger */
   /* ================= */
   .burger {
@@ -1030,5 +1120,18 @@ header {
 
   .trademark-card-text {
     margin-top: 20px;
+  }
+
+  .clients-content-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .clients-content-list {
+    width: 100%;
+  }
+
+  .clients-logo-item {
+    --elems: 2;
   }
 }
