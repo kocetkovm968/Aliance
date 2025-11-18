@@ -181,7 +181,7 @@ p {
 }
 
 .navbar-button {
-  padding: 0 3.3125rem;
+  padding: 0 3.13rem;
   height: 100%;
 }
 
@@ -362,7 +362,7 @@ header {
   color: #828a99;
 }
 
-.steps-link {
+.button-link {
   display: flex;
   align-items: center;
   margin-top: 1.25rem;
@@ -372,9 +372,9 @@ header {
   color: #5c8ee5;
 }
 
-.steps-link::before {
+.button-link::before {
   content: "";
-  margin-right: 1.25rem;
+  margin-right: 20px;
   width: 40px;
   height: 1px;
   background-color: #5c8ee5;
@@ -491,6 +491,39 @@ header {
 }
 
 
+/* section founder */
+/* ============================================================ */
+.founder-wrapper {
+  display: flex;
+  /* column-gap: 120px; */
+  column-gap: 6.25vw;
+}
+
+.founder-img {
+  display: block;
+  width: 43.75%;
+  object-fit: cover;
+}
+
+.founder-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 45rem;
+}
+
+.founder-title {
+  max-width: 480px;
+  margin-bottom: 1.25rem;
+}
+
+.founder-text {
+  margin-bottom: 1.875rem;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+
+
 
 
 
@@ -505,7 +538,7 @@ header {
   transform: scaleX(1);
 }
 
-.steps-link:hover::before {
+.button-link:hover::before {
   width: 60px;
 }
 
@@ -635,6 +668,10 @@ header {
   .trademark-card-title {
     font-size: 20px;
   }
+
+  .founder-content {
+    padding-right: 25px;
+  }
 }
 
 
@@ -654,6 +691,12 @@ header {
   .header-logo {
     justify-content: center;
     flex-grow: 1;
+  }
+
+  .logo-svg {
+    max-width: 120px;
+    width: 120px;
+    height: 38px;
   }
 
   .header-nav {
@@ -678,20 +721,25 @@ header {
   }
 
   .section-title {
-    margin-top: 20px;
+    margin-top: 17px;
     margin-bottom: 30px;
     font-size: 36px;
   }
 
   .steps-title {
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 20px;
     line-height: 130%;
   }
 
   .steps-text,
-  .steps-link {
+  .button-link {
     font-size: 14px;
+  }
+
+  .button-link {
+    margin-top: 26px;
+    font-weight: 700;
   }
 
   .card {
@@ -733,6 +781,29 @@ header {
   }
 
   .trademark-card-text {
+    font-size: 14px;
+  }
+
+  .founder-wrapper {
+    flex-direction: column;
+  }
+
+  .founder-img {
+    width: 100%;
+  }
+
+  .founder-content {
+    max-width: 100%;
+    padding: 50px 15px;
+    padding-bottom: 0;
+  }
+
+  .founder-title {
+    margin-bottom: 10px;
+  }
+
+  .founder-text {
+    margin-bottom: 18px;
     font-size: 14px;
   }
 
@@ -898,8 +969,8 @@ header {
   }
 
   .header-title {
-    margin-top: 1.6667rem;
-    margin-bottom: .8333rem;
+    margin-top: 18px;
+    margin-bottom: 15px;
     font-size: 4rem;
   }
 
@@ -931,18 +1002,30 @@ header {
 
   .header-text {
     margin-bottom: 2.5rem;
+    font-size: 14px;
   }
 
   .header-features {
     margin-top: 4.1667rem;
+    height: 140px;
+  }
+
+  .header-features-item {
+    padding: 20px 30px;
   }
 
   .header-button {
     width: 100%;
+    font-weight: 700;
+    font-size: 14px;
   }
 
   .card {
     --elems: 1;
+  }
+
+  .trademark-title span {
+    display: none;
   }
 
   .trademark-card-text {
