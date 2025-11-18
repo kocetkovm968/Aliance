@@ -40,8 +40,8 @@ burger.addEventListener('click', (event) => {
   //если меню открыто "?" закрыть меню, иначе ":" открыть меню
 });
 
-
-const swiper1 = new Swiper('.header .swiper', {
+/* const swiper1 = new Swiper('.header .swiper' */
+const featuresSlider = new Swiper('.features-slider', {
   speed: 400,
   autoHeight: true,
   slidesPerView: 1,
@@ -62,15 +62,15 @@ const swiper1 = new Swiper('.header .swiper', {
     1024: {
       slidesPerView: 4,
     },
-    // when window width is >= 1200px
+    // when window width is >= 1241px
     1241: {
       slidesPerView: 5,
     }
   },
 });
 
-
-const swiper2 = new Swiper('.steps .swiper', {
+/* const swiper2 = new Swiper('.steps .swiper' */
+const stepsSlider = new Swiper('.steps-slider', {
   speed: 400,
   slidesPerView: 1,
   navigation: {
@@ -78,17 +78,17 @@ const swiper2 = new Swiper('.steps .swiper', {
     prevEl: ".steps .slider-button-prev",
   },
   breakpoints: {
-    // when window width is >= 576px
+    // when window width is >= 485px
     485: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    // when window width is >= 768px
+    // when window width is >= 1024px
     1024: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
-    // when window width is >= 1024px
+    // when window width is >= 1241px
     1241: {
       slidesPerView: 4,
       spaceBetween: 30,

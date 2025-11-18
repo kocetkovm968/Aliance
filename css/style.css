@@ -72,6 +72,27 @@ p {
   display: none;
 }
 
+.slider-controls {
+  display: flex;
+}
+
+.primary-slider-controls {
+  justify-content: flex-end;
+  margin-top: 30px;
+  height: 60px;
+}
+
+.primary-button-prev,
+.primary-button-next {
+  width: 80px;
+  background-color: #5c8ee5;
+}
+
+.primary-controls-icon {
+  width: 36px;
+  height: 24px;
+}
+
 
 
 /* navbar */
@@ -275,11 +296,8 @@ header {
   color: #FFFFFF;
 }
 
-.slider-controls {
+.features-slider-controls {
   display: none;
-}
-
-.header .slider-controls {
   height: 44px;
 }
 
@@ -292,8 +310,8 @@ header {
   cursor: pointer;
 }
 
-.header .slider-button-prev,
-.header .slider-button-next {
+.features-slider-controls .slider-button-prev,
+.features-slider-controls .slider-button-next {
   flex-basis: 50%;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
@@ -381,16 +399,8 @@ header {
   transition: width 0.2s;
 }
 
-.steps .slider-controls {
-  justify-content: flex-end;
-  margin-top: 20px;
-  height: 40px;
-}
-
-.steps .slider-button-prev,
-.steps .slider-button-next {
-  width: 60px;
-  background-color: #5c8ee5;
+.steps-slider-controls {
+  display: none;
 }
 
 
@@ -583,6 +593,12 @@ header {
 
 
 
+/* section blog */
+/* ============================================================ */
+
+
+
+
 
 
 
@@ -708,6 +724,21 @@ header {
 
   .slider-controls {
     display: flex;
+  }
+
+  .primary-slider-controls {
+    margin-top: 20px;
+    height: 40px;
+  }
+
+  .primary-button-prev,
+  .primary-button-next {
+    width: 60px;
+  }
+
+  .primary-controls-icon {
+    width: 30px;
+    height: 20px;
   }
 
   .steps-item {
