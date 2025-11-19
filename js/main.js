@@ -97,3 +97,20 @@ const stepsSlider = new Swiper('.steps-slider', {
 });
 
 
+const blogSlider = new Swiper('.blog-slider', {
+  speed: 400,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".blog .slider-button-next",
+    prevEl: ".blog .slider-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 769px
+   769: {
+      slidesPerView: 2,
+    },
+  },
+});
+
+
