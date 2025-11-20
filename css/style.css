@@ -653,6 +653,130 @@ header {
 
 
 
+/* section cta */
+/* ============================================================ */
+.cta {
+  padding-top: 224px;
+}
+
+.bg-grey {
+  background-color: #f0f2f5;
+}
+
+.section-cta {
+  position: relative;
+  padding: 100px 0;
+}
+
+.cta-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 720px;
+  width: 50%;
+}
+
+.cta-form-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cta-form {
+  max-width: 840px;
+}
+
+.cta-form-title {
+  margin: 0;
+}
+
+.cta-form-text {
+  margin-top: 20px;
+  margin-bottom: 42px;
+  max-width: 640px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828a99;
+}
+
+.input-group-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.input-group {
+  position: relative;
+  flex-basis: 50%;
+  height: 66px;
+  background-color: #f0f2f5;
+}
+
+.input {
+  padding: 20px 30px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 1px solid #e4e4eb;
+  background-color: transparent;
+}
+
+.input-group-label {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828a99;
+  cursor: text;
+}
+
+.input:focus {
+  border-color: #5c8ee5;
+}
+
+.input:focus+.input-group-label,
+.input:not(:placeholder-shown)+.input-group-label {
+  top: -10px;
+  left: 20px;
+  padding: 0 10px;
+  font-size: 10px;
+  background-color: inherit;
+}
+
+.cta-form-footer {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.cta-form-button {
+  padding: 20px 50px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.notify {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notify-icon {
+  flex-shrink: 0;
+}
+
+.notify-text {
+  max-width: 380px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #828a99;
+}
+
+
+
 
 
 
