@@ -942,21 +942,35 @@ header {
 .modal {
   position: fixed;
   inset: 0;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: rgba(41, 45, 51, 0.5);
   z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
 }
 
 .modal.is-open {
   display: flex;
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.is-open .modal-content {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .modal-content {
   padding: 40px 50px;
   max-width: 460px;
   background-color: #fafbfc;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: transform 0.3s, opacity 0.3s;
 }
 
 .modal-content-header {
