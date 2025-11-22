@@ -942,7 +942,7 @@ header {
 .modal {
   position: fixed;
   inset: 0;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(41, 45, 51, 0.5);
@@ -953,7 +953,6 @@ header {
 }
 
 .modal.is-open {
-  display: flex;
   transform: translateX(0);
   visibility: visible;
   opacity: 1;
@@ -976,7 +975,6 @@ header {
 .modal-content-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .modal-title {

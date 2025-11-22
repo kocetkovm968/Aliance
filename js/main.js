@@ -107,27 +107,36 @@ const blogSlider = new Swiper('.blog-slider', {
   },
   breakpoints: {
     // when window width is >= 769px
-   769: {
+    769: {
       slidesPerView: 2,
     },
   },
 });
 
 
+
+/* улучшенный скрипт для закрытия модального окна */
 const modal = document.querySelector(".modal");
-const modalToggle = document.querySelectorAll('[data-toggle=modal]');
-const modalClose = document.querySelector(".modal-close");
+const modalСontent = document.querySelector(".modal-content");
 
-
-modalToggle.forEach((element) => {
-  element.addEventListener("click", (event) => {
-    event.preventDefault();
-    modal.classList.add("is-open"); 
-  });
+/* если куда-либо в документе будет клик */
+document.addEventListener("click", (event) => {
+  /* покажить путь к элементу куда мы кликнули, включает ли он в себя modalСontent*/
+  
+  /* если мы кликнули */
+  if (
+    event.target.dataset.toggle == "modal" || /* в элемент у которого стоит атрибут data-toggle="modal" или  */
+    event.target.parentNode.dataset.toggle == "modal" || /* у родительского элемента(parentNode) тоже стоит атрибут data-toggle="modal" или */
+    !event.composedPath().includes(modalСontent) &&  /* если в пути (composedPath() куда кликнули нет(!) элемента modalСontent) и*/
+    modal.classList.contains("is-open") /* мод.окно содержит класс is-open */
+  ) { /* то */
+      event.preventDefault(); /*  отменяет действие по умолчанию */
+      modal.classList.toggle("is-open"); /* модальному окну перключаем класс is-open туда-сюда */
+    }
 });
-modalClose.addEventListener("click", (event) => {
-  event.preventDefault();
-  modal.classList.remove("is-open");
+document.addEventListener("keyup", (event) => {
+  /* если нажали кнопку Escape и мод.окно содержит класс is-open*/
+  if (event.key == "Escape" && modal.classList.contains("is-open")) {
+    modal.classList.toggle("is-open");
+  }
 });
-
-
