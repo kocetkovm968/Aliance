@@ -119,9 +119,20 @@ p {
 }
 
 .navbar-light {
-  height: 4.625rem;
   color: #292d33;
   background-color: #fafbfc;
+}
+
+.navbar-light .logo-light {
+  display: none;
+}
+
+.navbar-light .logo-dark {
+  display: block;
+}
+
+.navbar-scroll {
+  height: 4.625rem;
 }
 
 .navbar-light .header-logo-path {
@@ -314,6 +325,26 @@ header {
 .features-slider-controls .slider-button-next {
   flex-basis: 50%;
   border: 1px solid rgba(235, 235, 240, 0.2);
+}
+
+/* about.html */
+.page-header {
+  padding-top: 9rem;
+  padding-bottom: 3.125rem;
+}
+
+.page-header-bg-image {
+  background-color: #f0f2f5;
+}
+
+.page-header-title {
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+  font-family: 'Bebas Neue Regular', sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 120%;
+  color: #292d33;
 }
 
 

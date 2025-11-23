@@ -3,44 +3,65 @@ const logoLight = document.querySelector('.logo-light');
 const logoDark = document.querySelector('.logo-dark');
 const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.mobile-menu');
+const isFront = document.body.classList.contains('front-page');//переменная для проверки находимся на главной странице или нет
+
+const modal = document.querySelector(".modal");
+const modalСontent = document.querySelector(".modal-content");
 
 
-const lightModeOn = (event) => { //функция изменения navbar на светлый вместе с логотипом
+//Функция изменения navbar на светлый
+const lightModeOn = (event) => { 
   navbar.classList.add('navbar-light');
-  logoDark.style.display = 'block';
-  logoLight.style.display = 'none';
 };
 
-const lightModeOff = (event) => { //функция изменения navbar на исходный вместе с логотипом
+//Функция изменения navbar на исходный
+const lightModeOff = (event) => { 
   navbar.classList.remove('navbar-light');
-  logoDark.style.display = 'none';
-  logoLight.style.display = 'block';
 };
 
-const openMenu = (event) => { //функция открывания меню
+//Функция для изменения высоты Navbar
+const changeNavHeight = (height) => {
+  // высоту которую передадим для этой фунции станет высотой Navbar
+  navbar.style.height = height;
+};
+
+//Функция открывания мобильного меню
+const openMenu = (event) => { 
   mobileMenu.classList.add('is-open'); //вешает класс is-open
   burger.classList.add('burger-close');
-  document.body.style.overflow = 'hidden'; //запрещаем прокрутку сайта под меню
+  document.body.style.overflow = 'hidden'; //запрещаем прокрутку сайта под мобильным меню
   lightModeOn();
 };
 
-const closeMenu = (event) => { //функция закрытия меню
+//Функция закрытия меню
+const closeMenu = (event) => { 
   mobileMenu.classList.remove('is-open'); //убирает класс is-open
   burger.classList.remove('burger-close');
   document.body.style.overflow = ''; //разрешает прокрутку сайта под меню
   lightModeOff();
 };
 
+
+//Функция, отслеживающая прокрутку на странице
 window.addEventListener('scroll', () => {
-  this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  // если scroll > 1px, то меняется высота Navbar, если нет, то исходная высота
+  this.scrollY > 1 ? changeNavHeight("4.625rem") : changeNavHeight("5.875rem");
+  // если находимся на главной странице, то сделай Navbar светлым
+  if (isFront) {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
 });
 
+
+//функция открытия или закрытия мобильно меню при клике на кнопку "burger"
 burger.addEventListener('click', (event) => {
-  mobileMenu.classList.contains('is-open') ? closeMenu() : openMenu();
   //если меню открыто "?" закрыть меню, иначе ":" открыть меню
+  mobileMenu.classList.contains('is-open') ? closeMenu() : openMenu();
 });
 
-/* const swiper1 = new Swiper('.header .swiper' */
+
+
+/* слайдер на маленьких экранах для блока "features" */
 const featuresSlider = new Swiper('.features-slider', {
   speed: 400,
   autoHeight: true,
@@ -69,7 +90,9 @@ const featuresSlider = new Swiper('.features-slider', {
   },
 });
 
-/* const swiper2 = new Swiper('.steps .swiper' */
+
+
+/* слайдер на маленьких экранах для блока "steps" */
 const stepsSlider = new Swiper('.steps-slider', {
   speed: 400,
   slidesPerView: 1,
@@ -97,6 +120,8 @@ const stepsSlider = new Swiper('.steps-slider', {
 });
 
 
+
+/* слайдер для блока "blog" */
 const blogSlider = new Swiper('.blog-slider', {
   speed: 400,
   slidesPerView: 1,
@@ -116,18 +141,13 @@ const blogSlider = new Swiper('.blog-slider', {
 
 
 /* улучшенный скрипт для закрытия модального окна */
-const modal = document.querySelector(".modal");
-const modalСontent = document.querySelector(".modal-content");
-
 /* если куда-либо в документе будет клик */
 document.addEventListener("click", (event) => {
-  /* покажить путь к элементу куда мы кликнули, включает ли он в себя modalСontent*/
-  
   /* если мы кликнули */
   if (
     event.target.dataset.toggle == "modal" || /* в элемент у которого стоит атрибут data-toggle="modal" или  */
     event.target.parentNode.dataset.toggle == "modal" || /* у родительского элемента(parentNode) тоже стоит атрибут data-toggle="modal" или */
-    !event.composedPath().includes(modalСontent) &&  /* если в пути (composedPath() куда кликнули нет(!) элемента modalСontent) и*/
+    !event.composedPath().includes(modalСontent) &&  /* если в пути (composedPath()) куда кликнули нет(!) элемента modalСontent) и*/
     modal.classList.contains("is-open") /* мод.окно содержит класс is-open */
   ) { /* то */
       event.preventDefault(); /*  отменяет действие по умолчанию */
