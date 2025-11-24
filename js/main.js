@@ -76,7 +76,7 @@ const featuresSlider = new Swiper('.features-slider', {
       slidesPerView: 2,
     },
     // when window width is >= 768px
-    768: {
+    769: {
       slidesPerView: 3,
     },
     // when window width is >= 1024px

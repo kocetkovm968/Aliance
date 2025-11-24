@@ -337,6 +337,19 @@ header {
   background-color: #f0f2f5;
 }
 
+.page-header-wrapper {
+  position: relative;
+}
+
+.page-header-img {
+  position: absolute;
+  right: 0;
+  bottom: -3.125rem;
+  width: 30rem;
+  height: 15rem;
+  z-index: 2;
+}
+
 .page-header-title {
   margin-top: 1.875rem;
   margin-bottom: 1.25rem;
@@ -344,6 +357,39 @@ header {
   font-weight: 400;
   font-size: 5rem;
   line-height: 120%;
+  color: #292d33;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs-item {
+  position: relative;
+  padding-right: 34px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: block;
+  width: 13px;
+  height: 1px;
+  background-color: #828a99;
+  transform: translateY(50%);
+}
+
+.breadcrumbs-link {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #828a99;
+}
+
+.breadcrumbs-link-active {
   color: #292d33;
 }
 
@@ -1330,6 +1376,25 @@ header {
 
   .separator {
     width: 100px;
+  }
+
+  .page-header {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+
+  .page-header-img {
+    display: none;
+  }
+
+  .page-header-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+
+  .breadcrumbs-link  {
+    font-size: 12px;
   }
 
   .section {
