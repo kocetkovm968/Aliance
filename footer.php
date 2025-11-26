@@ -11,7 +11,7 @@
           </p>
           <div class="input-group-wrapper">
             <div class="input-group">
-              <input id="user-name" name="username" type="text" class="input" placeholder=" " maxlength="100" required>
+              <input id="user-name" name="username" type="text" class="input" placeholder=" " maxlength="30" required>
               <label for="user-name" class="input-group-label">Имя</label>
             </div>
             <div class="input-group">
@@ -44,7 +44,7 @@
         <svg class="footer-logo">
           <use href="img/sprite.svg#logo-dark"></use>
         </svg>
-        <a href="tel:+79996861014" class="footer-phone">+7 (999) 686-10-14</a>
+        <a href="tel:+79996861014" class="footer-phone">+7 (555) 686-10-14</a>
         <div class="footer-info-wrapper">
           <div class="footer-info">
             <svg class="footer-icon" width="24" height="24">
@@ -176,14 +176,14 @@
         Оставьте заявку, наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее время ответит на&nbsp;все интересующие
         вопросы и&nbsp;поможем даже в&nbsp;самых сложных случаях!
       </p>
-      <form action="#" class="modal-form">
+      <form action="handler.php" method="POST" class="modal-form">
         <div class="input-group-wrapper modal-group-wrapper">
           <div class="input-group">
-            <input id="modal-user-name" type="text" class="input" placeholder=" ">
+            <input id="modal-user-name" name="username" type="text" class="input" placeholder=" " maxlength="30" required>
             <label for="modal-user-name" class="input-group-label modal-group-label">Имя</label>
           </div>
           <div class="input-group">
-            <input id="modal-user-phone" type="tel" class="input" placeholder=" ">
+            <input id="modal-user-phone" name="userphone" type="tel" class="input" placeholder=" " maxlength="30" required>
             <label for="modal-user-phone" class="input-group-label modal-group-label">Номер телефона</label>
           </div>
         </div>
@@ -207,6 +207,7 @@
 
 
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/just-validate.production.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

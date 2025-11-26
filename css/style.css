@@ -782,6 +782,7 @@ header {
 .input-group-wrapper {
   display: flex;
   gap: 1.875rem;
+  background-color: #f0f2f5;
 }
 
 .input-group {
@@ -823,7 +824,24 @@ header {
   left: 20px;
   padding: 0 10px;
   font-size: 10px;
-  background-color: #f0f2f5;
+  background-color: inherit;
+}
+
+.input.is-invalid {
+  border: 1px solid rgb(184, 17, 17);
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 0 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  background-color: inherit;
+  transform: translateY(-50%);
 }
 
 .cta-form-footer {
@@ -1081,6 +1099,7 @@ header {
 
 .modal-group-wrapper {
   flex-direction: column;
+  background-color: #fafbfc;
 }
 
 .modal-form-footer {
@@ -1088,11 +1107,6 @@ header {
   flex-direction: column;
   gap: 24px;
   margin-top: 30px;
-}
-
-.input:focus+.modal-group-label,
-.input:not(:placeholder-shown)+.modal-group-label {
-  background-color: #fafbfc;
 }
 
 
@@ -1393,7 +1407,7 @@ header {
     font-size: 48px;
   }
 
-  .breadcrumbs-link  {
+  .breadcrumbs-link {
     font-size: 12px;
   }
 

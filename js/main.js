@@ -10,12 +10,12 @@ const modalСontent = document.querySelector(".modal-content");
 
 
 //Функция изменения navbar на светлый
-const lightModeOn = (event) => { 
+const lightModeOn = (event) => {
   navbar.classList.add('navbar-light');
 };
 
 //Функция изменения navbar на исходный
-const lightModeOff = (event) => { 
+const lightModeOff = (event) => {
   navbar.classList.remove('navbar-light');
 };
 
@@ -26,7 +26,7 @@ const changeNavHeight = (height) => {
 };
 
 //Функция открывания мобильного меню
-const openMenu = (event) => { 
+const openMenu = (event) => {
   mobileMenu.classList.add('is-open'); //вешает класс is-open
   burger.classList.add('burger-close');
   document.body.style.overflow = 'hidden'; //запрещаем прокрутку сайта под мобильным меню
@@ -34,7 +34,7 @@ const openMenu = (event) => {
 };
 
 //Функция закрытия меню
-const closeMenu = (event) => { 
+const closeMenu = (event) => {
   mobileMenu.classList.remove('is-open'); //убирает класс is-open
   burger.classList.remove('burger-close');
   document.body.style.overflow = ''; //разрешает прокрутку сайта под меню
@@ -144,19 +144,51 @@ const blogSlider = new Swiper('.blog-slider', {
 /* если куда-либо в документе будет клик */
 document.addEventListener("click", (event) => {
   /* если мы кликнули */
-  if (
+  if (/* условие: */
     event.target.dataset.toggle == "modal" || /* в элемент у которого стоит атрибут data-toggle="modal" или  */
     event.target.parentNode.dataset.toggle == "modal" || /* у родительского элемента(parentNode) тоже стоит атрибут data-toggle="modal" или */
     !event.composedPath().includes(modalСontent) &&  /* если в пути (composedPath()) куда кликнули нет(!) элемента modalСontent) и*/
     modal.classList.contains("is-open") /* мод.окно содержит класс is-open */
   ) { /* то */
-      event.preventDefault(); /*  отменяет действие по умолчанию */
-      modal.classList.toggle("is-open"); /* модальному окну перключаем класс is-open туда-сюда */
-    }
+    event.preventDefault(); /*  отменяет действие по умолчанию */
+    modal.classList.toggle("is-open"); /* модальному окну перключаем класс is-open туда-сюда */
+  }
 });
 document.addEventListener("keyup", (event) => {
   /* если нажали кнопку Escape и мод.окно содержит класс is-open*/
   if (event.key == "Escape" && modal.classList.contains("is-open")) {
     modal.classList.toggle("is-open");
   }
+});
+
+
+//Валидация формы
+const forms = document.querySelectorAll("form");//собираем все формы
+forms.forEach((form) => {// инициализируем библиотеку проверки
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: 'is-invalid',
+  });
+  // применить правила к полям формы
+  validation
+    .addField('[name=username]', [
+      {
+        rule: 'required',
+        errorMessage: 'Укажите имя',
+      },
+      {
+        rule: 'maxLength',
+        value: 30,
+        errorMessage: 'Максимально 30 символов',
+      },
+    ])
+    .addField('[name=userphone]', [
+      {
+        rule: 'required',
+        errorMessage: 'Укажите телефон',
+      },
+    ])
+    //Проверка пройдена и форма отправлена
+    .onSuccess((event) => {
+      console.log(event.target.getAttribute('method'));
+    });
 });
