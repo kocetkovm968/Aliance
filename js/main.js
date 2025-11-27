@@ -164,7 +164,8 @@ document.addEventListener("keyup", (event) => {
 
 //Валидация формы
 const forms = document.querySelectorAll("form");//собираем все формы
-forms.forEach((form) => {// инициализируем библиотеку проверки
+forms.forEach((form) => {//перебираем все формы
+  // инициализируем библиотеку проверки
   const validation = new JustValidate(form, {
     errorFieldCssClass: 'is-invalid',
   });
@@ -189,6 +190,25 @@ forms.forEach((form) => {// инициализируем библиотеку п
     ])
     //Проверка пройдена и форма отправлена
     .onSuccess((event) => {
-      console.log(event.target.getAttribute('method'));
+      const thisForm = event.target; //определяем в какой мы форме
+      const formData = new FormData(thisForm); //все данные из нашей формы
+
+      //функция которая незаметно дял пользователя возьмет данные из formData и отправит
+      const ajaxSend = (formData) => {
+        //возьми атрибут этой формы и будет тот самый URL
+        fetch(thisForm.getAttribute('action'), {
+          //со следующими опциями
+          method: thisForm.getAttribute('method'),//метод которой указан в этой форме
+          body: formData, //укажи в теле запроса все то что содержится в этой форме
+        }).then((Response) => { //тогда получи ответ
+          if(Response.ok) {//если с ответом все ок
+            thisForm.reset();//очисти форму
+            alert('Форма отправлена');
+          } else {
+            alert(Response.statusText);
+          }
+        });
+      };
+      ajaxSend(formData);//вызываем функцию с параметрами formData
     });
 });
