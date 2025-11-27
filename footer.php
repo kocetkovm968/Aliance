@@ -164,14 +164,12 @@
 
   <div class="modal">
     <div class="modal-content">
-      <div class="modal-content-header">
-        <h2 class="modal-title">Есть вопросы?</h2>
-        <a href="#" class="modal-close" data-toggle="modal">
-          <svg class="close-icon" width="24" height="24">
-            <use href="img/sprite.svg#close"></use>
-          </svg>
-        </a>
-      </div>
+      <h2 class="modal-title">Есть вопросы?</h2>
+      <a href="#" class="modal-close" data-toggle="modal">
+        <svg class="close-icon" width="24" height="24">
+          <use href="img/sprite.svg#close"></use>
+        </svg>
+      </a>
       <p class="modal-text">
         Оставьте заявку, наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее время ответит на&nbsp;все интересующие
         вопросы и&nbsp;поможем даже в&nbsp;самых сложных случаях!
@@ -203,6 +201,23 @@
     </div>
   </div>
   <!-- /.modal -->
+
+  <div class="modal modal-thanks">
+    <div class="modal-content">
+      <a href="#" class="modal-close" data-toggle="modal">
+        <svg class="close-icon" width="24" height="24">
+          <use href="img/sprite.svg#close"></use>
+        </svg>
+      </a>
+      <img src="" alt="" class="modal-thanks-icon">
+      <h2 class="modal-title">Спасибо за заявку!</h2>
+      <p class="modal-text">
+        Наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее время ответит на&nbsp;все интересующие вопросы и&nbsp;поможем даже в&nbsp;самых сложных случаях!
+      </p>
+      <a href="#" class="button modal-thanks-link">Вернуться на главную</a>
+    </div>
+  </div>
+  <!-- /.modal modal-thanks -->
 
 
 
