@@ -15,7 +15,7 @@
               <label for="user-name" class="input-group-label">Имя</label>
             </div>
             <div class="input-group">
-              <input id="user-phone" name="userphone" type="tel" class="input" placeholder=" " maxlength="30" required>
+              <input id="user-phone" name="userphone" type="tel" class="input phone-mask" placeholder=" " maxlength="30" required>
               <label for="user-phone" class="input-group-label">Номер телефона</label>
             </div>
           </div>
@@ -44,7 +44,7 @@
         <svg class="footer-logo">
           <use href="img/sprite.svg#logo-dark"></use>
         </svg>
-        <a href="tel:+79996861014" class="footer-phone">+7 (555) 686-10-14</a>
+        <a href="tel:+79996861014" class="footer-phone">+7 (444) 686-10-14</a>
         <div class="footer-info-wrapper">
           <div class="footer-info">
             <svg class="footer-icon" width="24" height="24">
@@ -181,7 +181,7 @@
             <label for="modal-user-name" class="input-group-label modal-group-label">Имя</label>
           </div>
           <div class="input-group">
-            <input id="modal-user-phone" name="userphone" type="tel" class="input" placeholder=" " maxlength="30" required>
+            <input id="modal-user-phone" name="userphone" type="tel" class="input phone-mask" placeholder=" " maxlength="30" required>
             <label for="modal-user-phone" class="input-group-label modal-group-label">Номер телефона</label>
           </div>
         </div>
@@ -202,22 +202,25 @@
   </div>
   <!-- /.modal -->
 
-  <div class="modal modal-thanks">
+  <div class="modal">
     <div class="modal-content">
+      <img src="img/thanks.svg" alt="thanks-icon" class="modal-thanks">
+      <h2 class="modal-title">Спасибо за заявку!</h2>
       <a href="#" class="modal-close" data-toggle="modal">
         <svg class="close-icon" width="24" height="24">
           <use href="img/sprite.svg#close"></use>
         </svg>
       </a>
-      <img src="" alt="" class="modal-thanks-icon">
-      <h2 class="modal-title">Спасибо за заявку!</h2>
       <p class="modal-text">
         Наш менеджер свяжется с&nbsp;Вами в&nbsp;ближайшее время ответит на&nbsp;все интересующие вопросы и&nbsp;поможем даже в&nbsp;самых сложных случаях!
       </p>
-      <a href="#" class="button modal-thanks-link">Вернуться на главную</a>
+      <div class="modal-form-footer">
+        <a href="./" class="button cta-form-button">Вернуться на главную</a>
+      </div>
     </div>
   </div>
-  <!-- /.modal modal-thanks -->
+  <!-- /.modal -->
+  
 
 
 

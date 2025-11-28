@@ -155,7 +155,7 @@
           высококачественный прототип будущего проекта напрямую зависит от&nbsp;анализа существующих паттернов
           поведения.
         </p>
-        <button class="button header-button">Подробнее о компании</button>
+        <button class="button header-button" data-toggle="modal">Подробнее о компании</button>
       </div>
       <!-- /.header-content -->
 

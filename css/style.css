@@ -855,6 +855,7 @@ header {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.3px;
+  text-align: center;
 }
 
 .notify {
@@ -1060,8 +1061,8 @@ header {
 
 .modal-content {
   position: relative;
-  padding: 40px 50px;
-  max-width: 460px;
+  padding: 2.5rem 3.125rem;
+  max-width: 28.75rem;
   background-color: #fafbfc;
   opacity: 0;
   transform: translateY(-10%);
@@ -1070,28 +1071,28 @@ header {
 
 .modal-title {
   font-family: 'Bebas Neue Regular';
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 120%;
   color: #292d33;
 }
 
 .modal-close {
   position: absolute;
-  top: 40px;
-  right: 50px;
+  top: 2.5rem;
+  right: 3.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   border: 1px solid #ebebf0;
 }
 
 .modal-text {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 1.25rem;
+  margin-bottom: 1.875rem;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
   color: #828a99;
 }
@@ -1104,8 +1105,17 @@ header {
 .modal-form-footer {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-top: 30px;
+  gap: 1.5rem;
+  margin-top: 1.875rem;
+}
+
+.modal-thanks {
+  display: block;
+  margin-bottom: 30px;
+  width: 22.5rem;
+  height: 19.375rem;
+  min-width: 285px;
+  min-height: 245px;
 }
 
 
