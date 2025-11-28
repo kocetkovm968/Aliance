@@ -44,7 +44,7 @@
         <svg class="footer-logo">
           <use href="img/sprite.svg#logo-dark"></use>
         </svg>
-        <a href="tel:+79996861014" class="footer-phone">+7 (444) 686-10-14</a>
+        <a href="tel:+79996861014" class="footer-phone">+7 (555) 686-10-14</a>
         <div class="footer-info-wrapper">
           <div class="footer-info">
             <svg class="footer-icon" width="24" height="24">
@@ -162,10 +162,10 @@
   <!-- /.footer -->
 
 
-  <div class="modal">
+  <div class="modal" id="feedback-modal">
     <div class="modal-content">
       <h2 class="modal-title">Есть вопросы?</h2>
-      <a href="#" class="modal-close" data-toggle="modal">
+      <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
         <svg class="close-icon" width="24" height="24">
           <use href="img/sprite.svg#close"></use>
         </svg>
@@ -202,11 +202,11 @@
   </div>
   <!-- /.modal -->
 
-  <div class="modal">
+  <div class="modal" id="alert-modal">
     <div class="modal-content">
-      <img src="img/thanks.svg" alt="thanks-icon" class="modal-thanks">
+      <img src="img/thanks.svg" alt="thanks-icon" class="modal-img">
       <h2 class="modal-title">Спасибо за заявку!</h2>
-      <a href="#" class="modal-close" data-toggle="modal">
+      <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
         <svg class="close-icon" width="24" height="24">
           <use href="img/sprite.svg#close"></use>
         </svg>

@@ -5,8 +5,7 @@ const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const isFront = document.body.classList.contains('front-page');//переменная для проверки находимся на главной странице или нет
 
-const modal = document.querySelector(".modal");
-const modalСontent = document.querySelector(".modal-content");
+
 
 
 //Функция изменения navbar на светлый
@@ -140,26 +139,42 @@ const blogSlider = new Swiper('.blog-slider', {
 
 
 
-/* улучшенный скрипт для закрытия модального окна */
-/* если куда-либо в документе будет клик */
-document.addEventListener("click", (event) => {
-  /* если мы кликнули */
-  if (/* условие: */
-    event.target.dataset.toggle == "modal" || /* в элемент у которого стоит атрибут data-toggle="modal" или  */
-    event.target.parentNode.dataset.toggle == "modal" || /* у родительского элемента(parentNode) тоже стоит атрибут data-toggle="modal" или */
-    !event.composedPath().includes(modalСontent) &&  /* если в пути (composedPath()) куда кликнули нет(!) элемента modalСontent) и*/
-    modal.classList.contains("is-open") /* мод.окно содержит класс is-open */
-  ) { /* то */
+/* скрипт дл открытия(закрытия модальных окон) */
+let currentModal; //текущее модальное окно
+let modalСontent; //содержимое мод.окна
+let alertModal = document.querySelector('#alert-modal');//мод.окно с предупреждением
+
+/* все переключатели, которые вызывают мод.окно */
+const modalButtons = document.querySelectorAll("[data-toggle=modal]");
+modalButtons.forEach((button) => {
+  /* клик по переключателю*/
+  button.addEventListener("click", (event) => { 
     event.preventDefault(); /*  отменяет действие по умолчанию */
-    modal.classList.toggle("is-open"); /* модальному окну перключаем класс is-open туда-сюда */
-  }
+    /* определяем текущее открытое мод.окно */
+    currentModal = document.querySelector(button.dataset.target);
+    /* открываем текущее мод.окно */
+    currentModal.classList.toggle("is-open");
+    /* назначаем контент текущего мод.окна */
+    modalСontent = currentModal.querySelector(".modal-content");
+    /* отслеживаем клик по окну и пустым областям */
+    currentModal.addEventListener("click", (event) => {
+      /* если в пути (composedPath()) куда кликнули нет(!) элемента modalСontent) */
+      if (!event.composedPath().includes(modalСontent)) {
+        /* то закрываем окно */
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
 });
+/* ловим событие нажатия на кнопки клавиатуры */
 document.addEventListener("keyup", (event) => {
-  /* если нажали кнопку Escape и мод.окно содержит класс is-open*/
-  if (event.key == "Escape" && modal.classList.contains("is-open")) {
-    modal.classList.toggle("is-open");
-  }
+  /* если нажали кнопку Escape и текущее мод.окно содержит класс is-open*/
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    /* закрываем текущее мод.окно */
+    currentModal.classList.toggle("is-open");
+  } 
 });
+
 
 
 //Валидация формы
@@ -193,7 +208,7 @@ forms.forEach((form) => {//перебираем все формы
       const thisForm = event.target; //определяем в какой мы форме
       const formData = new FormData(thisForm); //все данные из нашей формы
 
-      //функция которая незаметно дял пользователя возьмет данные из formData и отправит
+      //функция которая незаметно дял пользователя возьмет данные из formData и отправит на URL
       const ajaxSend = (formData) => {
         //возьми атрибут этой формы и будет тот самый URL
         fetch(thisForm.getAttribute('action'), {
@@ -203,7 +218,19 @@ forms.forEach((form) => {//перебираем все формы
         }).then((Response) => { //тогда получи ответ
           if(Response.ok) {//если с ответом все ок
             thisForm.reset();//очисти форму
-            alert('Форма отправлена');
+            currentModal.classList.remove("is-open");//закрой текущее мод.окно
+            alertModal.classList.add("is-open");//открой мод.окно alert
+            currentModal = alertModal;//переопределяем что тек.мод окно это alert
+            /* назначаем контент текущего мод.окна */
+            modalСontent = currentModal.querySelector(".modal-content");
+            /* отслеживаем клик по окну и пустым областям */
+            currentModal.addEventListener("click", (event) => {
+              /* если в пути (composedPath()) куда кликнули нет(!) элемента modalСontent) */
+              if (!event.composedPath().includes(modalСontent)) {
+                /* то закрываем окно */
+                currentModal.classList.remove("is-open");
+              }
+            });
           } else {
             alert(Response.statusText);
           }
@@ -212,6 +239,7 @@ forms.forEach((form) => {//перебираем все формы
       ajaxSend(formData);//вызываем функцию с параметрами formData
     });
 });
+
 
 
 //Макска для номера телефона

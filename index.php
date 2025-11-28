@@ -136,7 +136,7 @@
       </svg>
       <a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
     </div>
-    <button class="button navbar-button" data-toggle="modal">
+    <button class="button navbar-button" data-toggle="modal" data-target="#feedback-modal">
       <svg class="phone-svg" width="24" height="24">
         <use href="img/sprite.svg#phone"></use>
       </svg>
@@ -155,7 +155,7 @@
           высококачественный прототип будущего проекта напрямую зависит от&nbsp;анализа существующих паттернов
           поведения.
         </p>
-        <button class="button header-button" data-toggle="modal">Подробнее о компании</button>
+        <button class="button header-button" data-toggle="modal" data-target="#feedback-modal">Подробнее о компании</button>
       </div>
       <!-- /.header-content -->
 
