@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Aliance Production</title>
+  <title><?= $page_title; ?> - Aliance Production</title>
 </head>
 
-<body class="front-page">
+<body>
   <div class="mobile-menu">
     <!-- /.mobile-menu-top -->
     <div class="mobile-menu-top">
@@ -99,7 +99,7 @@
   </div>
   <!-- /.mobile-menu -->
 
-  <nav class="navbar">
+  <nav class="navbar navbar-light">
     <button class="burger">
       <span class="burger-line"></span>
       <span class="burger-line"></span>
@@ -145,105 +145,22 @@
   </nav>
   <!-- /.navbar -->
 
-  <header class="header header-image">
+  <header class="page-header page-header-bg-image">
     <div class="container">
-      <div class="header-content">
-        <div class="separator"></div>
-        <h1 class="header-title">Комплексное обеспечение товарами и&nbsp;расходными материалами бизнеса</h1>
-        <p class="header-text">
-          Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
-          высококачественный прототип будущего проекта напрямую зависит от&nbsp;анализа существующих паттернов
-          поведения.
-        </p>
-        <button class="button header-button" data-toggle="modal" data-target="#feedback-modal">Подробнее о компании</button>
-      </div>
-      <!-- /.header-content -->
-    </div>
-    <!-- /.container -->
-    <?php include_once('./template-parts/features-block.php') ?>
-    <!-- /.features -->
-  </header>
-  <!-- /.header -->
-
-  <section class="section steps">
-    <div class="container">
-      <div class="separator"></div>
-      <h2 class="section-title">схема работы</h2>
-
-      <!-- Основной блок слайдера -->
-      <div class="swiper steps-slider">
-        <!-- Обертка слайдера -->
-        <ol class="swiper-wrapper steps-list">
-          <!-- Слайды -->
-          <li class="swiper-slide steps-item">
-            <span class="steps-num">01</span>
-            <h3 class="steps-title">Знакомство</h3>
-            <p class="steps-text">
-              Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.
-            </p>
-            <a href="#" class="button-link steps-button-link">Оставить заявку</a>
-          </li>
-          <li class="swiper-slide steps-item">
-            <span class="steps-num">02</span>
-            <h3 class="steps-title">Заключение договора</h3>
-            <p class="steps-text">
-              Лишь интерактивные прототипы призваны к&nbsp;ответу.
-            </p>
-          </li>
-          <li class="swiper-slide steps-item">
-            <span class="steps-num">03</span>
-            <h3 class="steps-title">Производство</h3>
-            <p class="steps-text">
-              А&nbsp;также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены
-              на&nbsp;независимые элементы.
-            </p>
-          </li>
-          <li class="swiper-slide steps-item">
-            <span class="steps-num">04</span>
-            <h3 class="steps-title">Доставка</h3>
-            <p class="steps-text">
-              В&nbsp;частности, экономическая повестка сегодняшнего дня говорит о&nbsp;возможностях приоритизации разума
-              над эмоциями.
-            </p>
-          </li>
-        </ol>
-
-        <!-- Кнопки навигации вперед/назад -->
-        <div class="slider-controls steps-slider-controls primary-slider-controls">
-          <div class="slider-button-prev primary-button-prev">
-            <svg class="slider-controls-icon primary-controls-icon">
-              <use href="img/sprite.svg#arrow-prev"></use>
-            </svg>
-          </div>
-          <div class="slider-button-next primary-button-next">
-            <svg class="slider-controls-icon primary-controls-icon">
-              <use href="img/sprite.svg#arrow-next"></use>
-            </svg>
-          </div>
+      <div class="page-header-wrapper">
+        <div class="page-header-content">
+          <div class="separator"></div>
+          <h1 class="page-header-title"><?= $page_title; ?></h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a href="#" class="breadcrumbs-link">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a href="#" class="breadcrumbs-link breadcrumbs-link-active"><?= $page_title; ?></a>
+            </li>
+          </ul>
         </div>
+        <!-- <img src="img/page-header-img.png" alt="" class="page-header-img"> -->
       </div>
     </div>
-  </section>
-  <!-- /.section steps -->
-
-  <?php $block_title = "Контрактное производство"; 
-  include_once('./template-parts/contracts-block.php') ?>
-  <!-- /.section contracts -->
-
-  <?php $block_title = "собственные <span>торговые</span> марки"; 
-  include_once('./template-parts/trademark-block.php') ?>
-  <!-- /.section trademark -->
-
-  <?php include_once('./template-parts/founder-block.php') ?>
-  <!-- /.section founder -->
-
-  <?php include_once('./template-parts/clients-block.php') ?>
-  <!-- /.section clients -->
-
-  <?php 
-  $blog_title = "Блог экспертов в области производства";
-  $blog_content_hidden = 'hidden';
-  include_once('./template-parts/blog-block.php') ?>
-  <!-- /.section blog -->
-
-  <?php include_once ('footer.php'); ?>
+  </header>

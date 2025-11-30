@@ -1,169 +1,107 @@
-<!DOCTYPE html>
-<html lang="ru">
+  <?php 
+  $page_title = 'О компании';
+  include_once ('page-header.php'); ?>
+  <!-- /.page-header -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>О компании - Aliance Production</title>
-</head>
-
-<body>
-  <div class="mobile-menu">
-    <!-- /.mobile-menu-top -->
-    <div class="mobile-menu-top">
-      <ul class="mobile-menu-nav">
-        <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-nav-link">О компании</a>
-        </li>
-        <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-nav-link">Контрактное производство</a>
-          <ul class="mobile-submenu-list">
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автомобильная химия</a>
-            </li>
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Бытовая химия</a>
-            </li>
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Дезинфицирующие средства</a>
-            </li>
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Пищевые аэрозоли</a>
-            </li>
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Косметическая продукция</a>
-            </li>
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Краски аэрозольные</a>
-            </li>
-          </ul>
-        </li>
-        <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-nav-link">Собственные марки</a>
-          <ul class="mobile-submenu-list">
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автохимия AG-Tech</a>
-            </li>
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автохимия AP</a>
-            </li>
-          </ul>
-        </li>
-        <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-nav-link">Новости</a>
-        </li>
-        <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-nav-link">Контакты</a>
-        </li>
-      </ul>
-    </div>
-    <!-- /.mobile-menu-bottom -->
-    <div class="mobile-menu-bottom">
-      <a href="tel:+74996861014" class="mobile-menu-phone">+7 (499) 686-10-14</a>
-      <div class="mobile-menu-info">
-        <svg class="mobile-menu-icon" width="24" height="24">
-          <use href="img/sprite.svg#mark"></use>
-        </svg>
-        <address class="mobile-menu-address">г. Мосвка, Холодильный пер. 4к1с8</address>
-      </div>
-      <div class="mobile-menu-info">
-        <svg class="mobile-menu-icon" width="24" height="24">
-          <use href="img/sprite.svg#mail"></use>
-        </svg>
-        <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-menu-mail">a.dragunov@tdaliance.ru</a>
-      </div>
-      <ul class="mobile-menu-social">
-        <li class="mobile-menu-social-item">
-          <a href="#" class="mobile-menu-social-link">
-            <svg class="mobile-menu-icon" width="24" height="24">
-              <use href="img/sprite.svg#vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobile-menu-social-item">
-          <a href="#" class="mobile-menu-social-link">
-            <svg class="mobile-menu-icon" width="24" height="24">
-              <use href="img/sprite.svg#inst"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- /.mobile-menu -->
-
-  <nav class="navbar navbar-light">
-    <button class="burger">
-      <span class="burger-line"></span>
-      <span class="burger-line"></span>
-      <span class="burger-line"></span>
-    </button>
-    <a href="./" class="header-logo">
-      <svg class="logo-svg logo-light">
-        <use href="img/sprite.svg#logo-light"></use>
-      </svg>
-      <svg class="logo-svg logo-dark">
-        <use href="img/sprite.svg#logo-dark"></use>
-      </svg>
-    </a>
-    <ul class="header-nav">
-      <li class="header-nav-item">
-        <a href="./about.php" class="header-nav-link">О компании</a>
-      </li>
-      <li class="header-nav-item">
-        <a href="#" class="header-nav-link">Контрактное производство</a>
-      </li>
-      <li class="header-nav-item">
-        <a href="#" class="header-nav-link">Собственные торговые марки</a>
-      </li>
-      <li class="header-nav-item">
-        <a href="#" class="header-nav-link">Новости</a>
-      </li>
-      <li class="header-nav-item">
-        <a href="#" class="header-nav-link">Контакты</a>
-      </li>
-    </ul>
-    <div class="header-phone">
-      <svg class="phone-svg" width="24" height="24">
-        <use href="img/sprite.svg#phone"></use>
-      </svg>
-      <a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
-    </div>
-    <button class="button navbar-button" data-toggle="modal" data-target="#feedback-modal">
-      <svg class="phone-svg" width="24" height="24">
-        <use href="img/sprite.svg#phone"></use>
-      </svg>
-      <span class="button-text">Получить консультацию</span>
-    </button>
-  </nav>
-  <!-- /.navbar -->
-
-  <header class="page-header page-header-bg-image">
+  <section class="section experts section-padding">
     <div class="container">
-      <div class="page-header-wrapper">
-        <div class="page-header-content">
+      <div class="experts-wrapper">
+        <img src="img/experts-img.png" alt="Картинка блока" class="experts-img">
+        <div class="experts-content">
           <div class="separator"></div>
-          <h1 class="page-header-title">о компании</h1>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a href="#" class="breadcrumbs-link">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a href="#" class="breadcrumbs-link breadcrumbs-link-active">О компании</a>
-            </li>
-          </ul>
+          <h2 class="section-title experts-title">мы&nbsp;- эксперты в&nbsp;области производства&nbsp;химии</h2>
+          <p class="experts-text">
+            Разнообразный и&nbsp;богатый опыт говорит нам, что перспективное планирование однозначно фиксирует необходимость поставленных обществом задач! Есть над чем задуматься: ключевые особенности структуры проекта могут быть объединены в&nbsp;целые кластеры себе подобных. Интерактивные прототипы, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут описаны максимально подробно. Значимость этих проблем настолько очевидна, что перспективное планирование играет важную роль в&nbsp;формировании системы массового участия.
+          </p>
         </div>
-        <!-- <img src="img/page-header-img.png" alt="" class="page-header-img"> -->
       </div>
     </div>
-  </header>
+  </section>
+  <!-- /.section experts -->
 
+  <?php 
+  $features_style = 'features-style';
+  include_once('./template-parts/features-block.php') ?>
+  <!-- /.features -->
+
+  <section class="section production">
+    <div class="container">
+      <div class="production-wrapper production-wrapper-reverse">
+        <img src="img/production-img.jpg" alt="Картинка блока" class="production-img">
+        <div class="production-content">
+          <div class="production-content-header">
+            <div class="separator production-separator"></div>
+            <h2 class="section-title production-title">Наше производство</h2>
+          </div>
+          <p class="production-text">
+            Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании глубокомысленных рассуждений. Но&nbsp;граница обучения кадров создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса кластеризации усилий.
+          </p>
+          <p class="production-text">
+            Реализация намеченных плановых заданий, а&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для соответствующих условий активизации. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня требует анализа анализа существующих паттернов поведения.
+          </p>
+          <div class="clients-content-wrapper">
+          <ul class="clients-content-list">
+            <li class="clients-content-item">
+              <svg class="clients-content-icon" width="30" height="30">
+                <use href="img/sprite.svg#car"></use>
+              </svg>
+              Автомобильная химия
+            </li>
+            <li class="clients-content-item">
+              <svg class="clients-content-icon" width="30" height="30">
+                <use href="img/sprite.svg#home"></use>
+              </svg>
+              Бытовая химия
+            </li>
+            <li class="clients-content-item">
+              <svg class="clients-content-icon" width="30" height="30">
+                <use href="img/sprite.svg#disinfect"></use>
+              </svg>
+              Дезинфицирующие средства
+            </li>
+          </ul>
+          <ul class="clients-content-list">
+            <li class="clients-content-item">
+              <svg class="clients-content-icon" width="30" height="30">
+                <use href="img/sprite.svg#aerozol"></use>
+              </svg>
+              Пищевые аэрозоли
+            </li>
+            <li class="clients-content-item">
+              <svg class="clients-content-icon" width="30" height="30">
+                <use href="img/sprite.svg#cosmetic"></use>
+              </svg>
+              Косметическая продукция
+            </li>
+            <li class="clients-content-item">
+              <svg class="clients-content-icon" width="30" height="30">
+                <use href="img/sprite.svg#brush"></use>
+              </svg>
+              Краски аэрозольные
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.section production -->
+
+  <?php
+  $button_link_hidden = 'hidden';
+  include_once('./template-parts/founder-block.php'); ?>
+  <!-- /.section founder -->
+
+  <?php 
+  $blog_title = "Исследовательский центр Aliance&nbsp;production";
+  $blog_title_style = 'blog-title';
+  $blog_image_position = 'position';
+  $button_link_hidden = 'hidden';
+  include_once('./template-parts/blog-block.php') ?>
+  <!-- /.section blog -->
+
+  <?php include_once ('./template-parts/clients-block.php'); ?>
+  <!-- /.section clients -->
 
   <?php include_once ('footer.php'); ?>
+  <!-- /.footer -->

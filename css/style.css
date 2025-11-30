@@ -289,17 +289,20 @@ header {
   word-spacing: 0.8px;
 }
 
+.features {
+  margin-top: 6.25rem;
+}
+
 .header-features {
   position: relative;
   margin: 0;
-  margin-top: 6.25rem;
   padding: 0;
   display: flex;
 }
 
 .header-features-item {
   padding: 1.875rem 3.125rem;
-  min-height: 100%;
+  height: auto;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
@@ -321,11 +324,32 @@ header {
   height: 44px;
 }
 
-.features-slider-controls .slider-button-prev,
-.features-slider-controls .slider-button-next {
+.features-slider-button {
   flex-basis: 50%;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
+
+.slider-controls-icon {
+  fill: #ffffff;
+}
+
+.features-style .header-features-text {
+  color: #292d33;
+}
+
+.features-style .slider-controls-icon {
+  fill: #292D33;
+}
+
+.features-style .header-features-item {
+  border-color: #ebebf0;
+}
+
+.features-style .features-slider-button {
+  border-color: #ebebf0;
+}
+
+
 
 /* about.html */
 .page-header {
@@ -398,7 +422,11 @@ header {
 /* section steps */
 /* ============================================================ */
 .section {
-  padding-top: 150px;
+  padding-top: 9.375rem;
+}
+
+.section-padding {
+  padding-top: 100px;
 }
 
 .section-title {
@@ -485,7 +513,7 @@ header {
 
 
 
-/* section production */
+/* section contracts */
 /* ============================================================ */
 .cards {
   display: flex;
@@ -612,6 +640,10 @@ header {
   color: #828a99;
 }
 
+.founder-button-link.hidden {
+  display: none;
+}
+
 
 /* section clients */
 /* ============================================================ */
@@ -675,6 +707,29 @@ header {
 
 /* section blog */
 /* ============================================================ */
+.blog-title {
+  margin-bottom: 1.25rem;
+  max-width: 37.5rem;
+}
+
+.blog-content {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 1.875rem;
+}
+
+.blog-content-column {
+  width: 100%;
+}
+
+.blog-content-text {
+  max-width: 39.6875rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+
 .blog-card {
   position: relative;
   display: flex;
@@ -705,6 +760,10 @@ header {
   z-index: -2;
 }
 
+.blog-card-img.position {
+  z-index: 1;
+}
+
 .blog-card-title {
   font-weight: 400;
   font-size: 1.75rem;
@@ -722,13 +781,21 @@ header {
 
 .slider-controls-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 1.875rem;
 }
 
 .blog-slider-controls {
   margin-top: 0;
+  margin-left: auto;
+}
+
+.blog-content.hidden {
+  display: none;
+}
+
+.blog-button-link.hidden {
+  display: none;
 }
 
 
@@ -874,6 +941,102 @@ header {
   font-size: 12px;
   line-height: 160%;
   color: #828a99;
+}
+
+
+
+/* section experts */
+/* ============================================================ */
+.experts-wrapper {
+  display: flex;
+  column-gap: 6.25vw;
+}
+
+.experts-img {
+  display: block;
+  width: 30rem;
+  height: 30rem;
+}
+
+.experts-content {
+  padding-top: 3.125rem;
+}
+
+.experts-title {
+  max-width: 600px;
+  margin-bottom: 1.25rem;
+}
+
+.experts-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+
+
+
+/* section production */
+/* ============================================================ */
+.production-wrapper {
+  display: flex;
+  column-gap: 6.25vw;
+}
+
+.production-wrapper-reverse {
+  flex-direction: row-reverse;
+}
+
+.production-img {
+  display: block;
+  width: 42%;
+  object-fit: cover;
+}
+
+.production-content {
+  padding-top: 3.125rem;
+}
+
+.production-title {
+  margin-bottom: 1.25rem;
+}
+
+.production-text {
+  margin-bottom: 1.875rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+
+
+
+/* section seo */
+/* ============================================================ */
+.seo-title {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  color: #292d33;
+}
+
+.seo-text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828a99;
+}
+
+.seo-button-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.seo-button-link::before {
+  display: none;
 }
 
 
@@ -1426,6 +1589,10 @@ header {
     padding-top: 100px;
   }
 
+  .section-padding {
+    padding-top: 50px;
+  }
+
   .section-title {
     margin-top: 17px;
     margin-bottom: 30px;
@@ -1449,6 +1616,14 @@ header {
 
   .steps-button-link {
     margin-top: 26px;
+  }
+
+  .blog-title {
+    margin-bottom: 10px;
+  }
+
+  .blog-content-text {
+    font-size: 14px;
   }
 
   .card {
@@ -1566,6 +1741,58 @@ header {
 
   .input-group-label {
     font-size: 14px;
+  }
+
+  .experts-img {
+    align-self: center;
+    max-width: 345px;
+    max-height: 345px;
+  }
+
+  .experts-content {
+    padding-top: 0;
+  }
+
+  .experts-title {
+    margin-bottom: 10px;
+  }
+
+  .experts-text {
+    font-size: 14px;
+  }
+
+  .production-wrapper {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .production-img {
+    padding-top: 92px;
+    width: 100%;
+    height: 522px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .production-content {
+    padding-top: 30px;
+  }
+
+  .production-content-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .production-text {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .seo-title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 130%;
   }
 
   .footer-top {
@@ -1821,6 +2048,18 @@ header {
     gap: 20px;
   }
 
+  .blog-content {
+    margin-bottom: 30px;
+  }
+
+  .blog-content-column:last-of-type {
+    display: none;
+  }
+
+  .blog-content-text {
+    max-width: 100%;
+  }
+
   .cta-form-footer {
     flex-direction: column;
     margin-top: 10px;
@@ -1828,6 +2067,18 @@ header {
 
   .notify-text {
     max-width: 100%;
+  }
+
+  .experts-wrapper {
+    flex-direction: column;
+  }
+
+  .experts-content {
+    padding-top: 50px;
+  }
+
+  .experts-text {
+    font-size: 14px;
   }
 
   .footer-top {
@@ -1880,8 +2131,11 @@ header {
     font-size: 14px;
   }
 
+  .features {
+    margin-top: 50px;
+  }
+
   .header-features {
-    margin-top: 4.1667rem;
     height: 140px;
   }
 
@@ -1920,6 +2174,10 @@ header {
     --elems: 2;
   }
 
+  .production-text:last-of-type {
+    margin-bottom: 30px;
+  }
+
   .footer-bottom {
     flex-direction: column;
   }
@@ -1928,5 +2186,16 @@ header {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+  }
+}
+
+
+
+@media (max-width: 320px) {
+
+  /* ============================== */
+  .experts-img {
+    width: 100%;
+    height: 100%;
   }
 }

@@ -63,11 +63,10 @@ burger.addEventListener('click', (event) => {
 /* слайдер на маленьких экранах для блока "features" */
 const featuresSlider = new Swiper('.features-slider', {
   speed: 400,
-  autoHeight: true,
   slidesPerView: 1,
   navigation: {
-    nextEl: ".header .slider-button-next",
-    prevEl: ".header .slider-button-prev",
+    nextEl: ".features .slider-button-next",
+    prevEl: ".features .slider-button-prev",
   },
   breakpoints: {
     // when window width is >= 576px
@@ -125,6 +124,7 @@ const blogSlider = new Swiper('.blog-slider', {
   speed: 400,
   slidesPerView: 1,
   spaceBetween: 30,
+  loop: true,
   navigation: {
     nextEl: ".blog .slider-button-next",
     prevEl: ".blog .slider-button-prev",
