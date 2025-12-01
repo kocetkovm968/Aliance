@@ -153,10 +153,10 @@
           <h1 class="page-header-title"><?= $page_title; ?></h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a href="#" class="breadcrumbs-link">Главная</a>
+              <a href="./" class="breadcrumbs-link">Главная</a>
             </li>
             <li class="breadcrumbs-item">
-              <a href="#" class="breadcrumbs-link breadcrumbs-link-active"><?= $page_title; ?></a>
+              <a href="./about.php" class="breadcrumbs-link breadcrumbs-link-active"><?= $page_title; ?></a>
             </li>
           </ul>
         </div>
