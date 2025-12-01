@@ -39,7 +39,7 @@
       </ul>
 
       <!-- Кнопки навигации вперед/назад -->
-      <div class="slider-controls features-slider-controls">
+      <div class="slider-controls features-slider-controls <?= $slider_controls_margin; ?>">
         <div class="slider-button-prev features-slider-button">
           <svg class="slider-controls-icon" width="36" height="24">
             <use href="img/sprite.svg#arrow-prev"></use>

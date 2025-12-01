@@ -1,7 +1,7 @@
 <section class="section blog">
   <div class="container">
     <div class="separator"></div>
-    <h2 class="section-title <?= $blog_title_style; ?>"><?= $blog_title; ?></h2>
+    <h2 class="section-title blog-title <?= $blog_title_style; ?>"><?= $blog_title; ?></h2>
 
     <div class="blog-content <?= $blog_content_hidden; ?>">
       <div class="blog-content-column">

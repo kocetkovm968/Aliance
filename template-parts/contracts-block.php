@@ -3,7 +3,7 @@
     <?php 
       if (!empty($block_title)) {
         echo '<div class="separator"></div>';
-        echo '<h2 class="section-title">'. $block_title .'</h2>';
+        echo '<h2 class="section-title contracts-title">'. $block_title .'</h2>';
       }
     ?>
     <div class="cards">
