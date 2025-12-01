@@ -152,12 +152,12 @@
           <div class="separator"></div>
           <h1 class="page-header-title"><?= $page_title; ?></h1>
           <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a href="./" class="breadcrumbs-link">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a href="./about.php" class="breadcrumbs-link breadcrumbs-link-active"><?= $page_title; ?></a>
-            </li>
+            <!-- из массива подставляем значения для элементов хлебных крошек -->
+            <?php foreach ($pages as $item): ?>
+              <li class="breadcrumbs-item">
+                <a href="<?= $item['path']; ?>" class="breadcrumbs-link <?= $item['class']; ?>"><?= $item['title']; ?></a>
+              </li>
+            <?php endforeach; ?>
           </ul>
         </div>
         <!-- <img src="img/page-header-img.png" alt="" class="page-header-img"> -->

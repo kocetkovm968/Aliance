@@ -1,8 +1,13 @@
 const navbar = document.querySelector('.navbar');
 const logoLight = document.querySelector('.logo-light');
 const logoDark = document.querySelector('.logo-dark');
+
+
 const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.mobile-menu');
+
+
+const screenWidth = window.innerWidth;//переменная отслеживающая ширину окна браузера
 const isFront = document.body.classList.contains('front-page');//переменная для проверки находимся на главной странице или нет
 
 
@@ -41,7 +46,7 @@ const closeMenu = (event) => {
 };
 
 
-//Функция, отслеживающая прокрутку на странице
+/* //обработчик, отслеживающий прокрутку на странице
 window.addEventListener('scroll', () => {
   // если scroll > 1px, то меняется высота Navbar, если нет, то исходная высота
   this.scrollY > 1 ? changeNavHeight("4.625rem") : changeNavHeight("5.875rem");
@@ -49,7 +54,30 @@ window.addEventListener('scroll', () => {
   if (isFront) {
     this.scrollY > 1 ? lightModeOn() : lightModeOff();
   }
+}); */
+
+
+// Обработчик прокрутки страницы на разных размерах экрана
+window.addEventListener('scroll', () => {
+  // const screenWidth = window.innerWidth;
+  if (this.scrollY > 1) { // Скролл больше 1px
+    if (screenWidth <= 375) {
+      changeNavHeight("4rem"); // Для маленьких экранов
+    } else {
+      changeNavHeight("4.625rem"); // Для больших экранов
+    }
+  } else {
+    if (screenWidth <= 375) {
+      changeNavHeight("5.6667rem"); // Восстановление исходной высоты на малых экранах
+    } else {
+      changeNavHeight("5.875rem"); // Восстановление исходной высоты на больших экранах
+    }
+  }
+  if (isFront) {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
 });
+
 
 
 //функция открытия или закрытия мобильно меню при клике на кнопку "burger"
