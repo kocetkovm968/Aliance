@@ -1055,7 +1055,7 @@ header {
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 162%;
   color: #828a99;
 }
 
@@ -1658,16 +1658,8 @@ header {
     margin-top: 26px;
   }
 
-  .blog-title {
-    margin-bottom: 35px;
-  }
-
-  .blog-title-style {
-    margin-bottom: 10px;
-  }
-
-  .blog-content-text {
-    font-size: 14px;
+  .contracts-title{
+    margin-bottom: 32px;
   }
 
   .card {
@@ -1730,6 +1722,11 @@ header {
 
   .founder-content {
     max-width: 100%;
+    padding: 50px 15px;
+    padding-bottom: 0;
+  }
+
+  .founder-content.padding {
     padding: 30px 15px;
     padding-bottom: 0;
   }
@@ -1777,8 +1774,21 @@ header {
     margin-top: 20px;
   }
 
+  .blog-title {
+    margin-bottom: 35px;
+  }
+
+  .blog-title-style {
+    margin-bottom: 10px;
+  }
+
+  .blog-content-text {
+    font-size: 14px;
+  }
+
   .section-cta {
-    padding: 50px 0;
+    padding-top: 47px;
+    padding-bottom: 50px;
   }
 
   .cta-form-title {
@@ -1850,7 +1860,7 @@ header {
 
   .footer-top {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
   }
 
   .footer-bottom {
@@ -2074,7 +2084,7 @@ header {
   }
 
   .header-title {
-    margin-top: 18px;
+    margin-top: 17px;
     margin-bottom: 15px;
     font-size: 4rem;
   }
@@ -2140,7 +2150,7 @@ header {
   .footer-top {
     flex-direction: column;
     align-items: flex-start;
-    gap: 18px;
+    gap: 20px;
   }
 
   .footer-logo {
@@ -2210,7 +2220,7 @@ header {
   }
 
   .trademark-title {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   .trademark-title span {

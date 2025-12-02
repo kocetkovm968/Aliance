@@ -7,7 +7,7 @@ $pages = [
 ];
 
 $page_title ='О компании'; //переменная для title и H1
-include_once ('page-header.php');
+include_once ('page-header.php');//page-header
 
 include_once ('./template-parts/experts-block.php');//section experts
 
@@ -17,6 +17,7 @@ include_once ('./template-parts/features-block.php');//features
 
 include_once ('./template-parts/production-block.php');//section production
 
+$founder_content_padding = 'padding';//переменная для изменения padding founder-content
 include_once ('./template-parts/founder-block.php');//section founder
 
 $blog_title_style ='blog-title-style';//переменная для изменения стилей заголовка бока blog
