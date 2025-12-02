@@ -1071,6 +1071,19 @@ header {
 
 
 
+/* section manufacturing */
+/* ============================================================ */
+.manufacturing-wrapper {
+  display: flex;
+  gap: 6.25vw;
+}
+
+.manufacturing-content {
+  
+}
+
+
+
 /* footer */
 /* ============================================================ */
 .footer-top {
@@ -1452,7 +1465,8 @@ header {
   }
 
   .slider-controls.margin {
-    margin-top: 4px;;
+    margin-top: 4px;
+    ;
   }
 
   .primary-slider-controls {
@@ -1525,6 +1539,10 @@ header {
 
   .cta-form {
     max-width: 100%;
+  }
+
+  .avtohim-img {
+    object-fit: contain;
   }
 
   .footer-top {
@@ -1658,7 +1676,7 @@ header {
     margin-top: 26px;
   }
 
-  .contracts-title{
+  .contracts-title {
     margin-bottom: 32px;
   }
 
@@ -1832,8 +1850,13 @@ header {
     padding-top: 95px;
     width: 100%;
     height: 525px;
-    object-fit: cover;
     object-position: top;
+  }
+
+  .avtohim-img {
+    padding-top: 0;
+    object-fit: cover;
+    object-position: center;
   }
 
   .production-content {
@@ -2145,6 +2168,10 @@ header {
 
   .experts-text {
     font-size: 14px;
+  }
+
+  .avtohim-img {
+    height: 430px;
   }
 
   .footer-top {
