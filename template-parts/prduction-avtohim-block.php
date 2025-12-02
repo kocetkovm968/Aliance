@@ -1,6 +1,6 @@
-<section class="section production">
+<section class="section production <?= $section_style; ?>">
   <div class="container">
-    <div class="production-wrapper production-wrapper-reverse">
+    <div class="production-wrapper">
       <img src="img/production-img.jpg" alt="Картинка блока" class="production-img">
       <div class="production-content">
         <div class="production-content-header">
@@ -13,7 +13,6 @@
         <p class="production-text">
           Реализация намеченных плановых заданий, а&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для соответствующих условий активизации. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня требует анализа анализа существующих паттернов поведения.
         </p>
-        <?php include_once('./template-parts/production-content-list.php') ?>
       </div>
     </div>
   </div>

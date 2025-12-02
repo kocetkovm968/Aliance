@@ -160,7 +160,11 @@
             <?php endforeach; ?>
           </ul>
         </div>
-        <!-- <img src="img/page-header-img.png" alt="" class="page-header-img"> -->
+        <?php 
+          if (!empty($page_header_img)) {
+            echo '<img src="'.$page_header_img.'" alt="" class="page-header-img">';
+          }
+        ?>
       </div>
     </div>
   </header>
