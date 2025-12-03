@@ -386,6 +386,7 @@ header {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-item {
@@ -1071,6 +1072,22 @@ header {
 
 
 
+/* production avtohim */
+/* ============================================================ */
+.avtohim-title {
+  margin-bottom: 1.5625rem;
+}
+
+.avtohim-text {
+  margin-bottom: 1.5625rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+
+
+
 /* section manufacturing */
 /* ============================================================ */
 .manufacturing-wrapper {
@@ -1079,7 +1096,73 @@ header {
 }
 
 .manufacturing-content {
-  
+  padding-top: 3.125rem;
+  padding-left: max(15px, calc((100% - 90rem) / 2));
+  width: 50%;
+}
+
+.manufacturing-title {
+  margin-bottom: 1.5625rem;
+}
+
+.manufacturing-text {
+  margin-bottom: 1.875rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+
+.manufacturing-img {
+  display: block;
+  width: 43.75%;
+}
+
+
+/* section autochemical-types */
+/* ============================================================ */
+.autochemical-types-title {
+  margin-bottom: 1.5625rem;
+}
+
+.autochemical-types-text {
+  margin-bottom: 3.25rem;
+  max-width: 52.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+
+.autochemical-types-wrapper {
+  display: flex;
+}
+
+.autochemical-types-list {
+  width: 19rem;
+}
+
+.autochemical-types-list:not(:last-of-type) {
+  margin-right: 3.5rem;
+}
+
+.autochemical-types-item {
+  display: flex;
+  gap: 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #292d33;
+}
+
+.autochemical-types-item::before {
+  content: "—";
+  color: #5c8ee5;
+
+}
+
+.autochemical-types-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 
@@ -1881,6 +1964,70 @@ header {
     line-height: 130%;
   }
 
+  .avtohim-title {
+    margin-bottom: 12px;
+  }
+
+  .avtohim-text {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .manufacturing-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .manufacturing-content {
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .manufacturing-title {
+    margin-bottom: 10px;
+  }
+
+  .manufacturing-text {
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+
+  .manufacturing-img {
+    width: 100%;
+    max-height: 500px;
+    min-height: 295px;
+    object-fit: cover;
+  }
+
+  .autochemical-types-title {
+    margin-bottom: 10px;
+  }
+
+  .autochemical-types-text {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .autochemical-types-wrapper {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+
+  .autochemical-types-list {
+    width: 50%;
+  }
+
+  .autochemical-types-list:not(:last-of-type) {
+    margin-right: 0;
+  }
+
+  .autochemical-types-item {
+    gap: 20px;
+    font-size: 14px;
+    line-height: 157%;
+  }
+
   .footer-top {
     padding-top: 50px;
     padding-bottom: 27px;
@@ -2279,6 +2426,10 @@ header {
     margin-bottom: 42px;
   }
 
+  .manufacturing-content-wrapper {
+    gap: 23px;
+  }
+
   .footer-bottom {
     flex-direction: column;
   }
@@ -2290,6 +2441,23 @@ header {
   }
 }
 
+
+
+@media (max-width: 375px) {
+
+  /* ============================== */
+  .breadcrumbs-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .autochemical-types-wrapper {
+    flex-direction: column;
+  }
+
+  .autochemical-types-list {
+    width: 100%;
+  }
+}
 
 
 @media (max-width: 320px) {

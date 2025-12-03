@@ -13,17 +13,23 @@
   $section_style = 'section-padding';//переменная для изменения padding блоков
   include_once ('template-parts\prduction-avtohim-block.php');//section production avtohim
 
-  $features_style = 'features-style';
+  $features_style = 'features-style';//переменная для изменения стилей блока features
+  $slider_controls_margin ='margin';//переменная для отступа кнопок слайдера
   include_once('./template-parts/features-block.php');
 
-  include_once('./template-parts/manufacturing-block.php');
+  include_once('./template-parts/manufacturing-block.php');//section manufacturing
 
+  include_once('./template-parts/autochemical-type-block.php');//section autochemical-types
 
-  // $blog_title = "Исследовательский центр Aliance production";
-  // $blog_title_style = 'blog-title';
-  // include_once('./template-parts/blog-block.php');
+  $blog_title_style ='blog-title-style';//переменная для изменения стилей заголовка бока blog
+  $blog_title ="Исследовательский центр Aliance&nbsp;production";//заголовок блока blog
+  $button_link_hidden ='hidden';//blog-content не виден кроме главной страницы
+  $blog_image_position ='position';//z-index для img слайдера блока blog
+  include_once ('./template-parts/blog-block.php');//section blog
 
-  // include_once ('./template-parts/clients-block.php');
+  include_once('./template-parts/steps-block.php');//section steps
+
+  include_once ('./template-parts/clients-block.php');//section clients
 
   include_once ('footer.php');
 ?>
