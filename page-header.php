@@ -26,7 +26,7 @@
           <a href="./contracts.php" class="mobile-menu-nav-link">Контрактное производство</a>
           <ul class="mobile-submenu-list">
             <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автомобильная химия</a>
+              <a href="./avto-chemistry.php" class="mobile-submenu-link">Автомобильная химия</a>
             </li>
             <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Бытовая химия</a>
@@ -49,7 +49,7 @@
           <a href="./trademarks.php" class="mobile-menu-nav-link">Собственные марки</a>
           <ul class="mobile-submenu-list">
             <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автохимия AG-Tech</a>
+              <a href="./AG-Tech.php" class="mobile-submenu-link">Автохимия AG-Tech</a>
             </li>
             <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Автохимия AP</a>
@@ -154,7 +154,7 @@
           <ul class="breadcrumbs">
             <!-- из массива подставляем значения для элементов хлебных крошек -->
             <?php foreach ($pages as $item): ?>
-              <li class="breadcrumbs-item">
+              <li class="breadcrumbs-item <?= $breadcrumbs_margin; ?>">
                 <a href="<?= $item['path']; ?>" class="breadcrumbs-link <?= $item['class']; ?>"><?= $item['title']; ?></a>
               </li>
             <?php endforeach; ?>

@@ -1,27 +1,25 @@
-<?php 
+<?php
   //массив для хлебных крошек со значениями
     $pages = [
     //адрес страницы, имя страницы, класс для изменния цвета текста последнего пункта
     ["path" => "./", "title" => "Главная", "class" => ""],
-    ["path" => "./contracts.php", "title" => "Контрактное производство", "class" => ""],
-    ["path" => "./contracts.php/avto-chemistry.php", "title" => "Автомобильная химия", "class" => "breadcrumbs-link-active"],
+    ["path" => "./trademarks.php", "title" => "Собственные торговые марки", "class" => ""],
+    ["path" => "./trademarks.php/AG-Tech.php", "title" => "Автохимия AG-Tech", "class" => "breadcrumbs-link-active"],
   ];
-  $page_title = 'Автомобильная химия';//переменная для title и H1
+  $page_title = 'Автохимия AG-Tech';//переменная для title и H1
   $page_header_img = 'img/page-header-img.png';//добавляется изображение к page-header
   $breadcrumbs_margin = 'margin';//переменная для margin хлебных крошек
   include_once ('page-header.php');//page-header
 
   $section_style = 'section-padding';//переменная для изменения padding блоков
-  include_once ('template-parts\prduction-avtohim-block.php');//section production avtohim
+  include_once ('template-parts\product_ag-tech-block.php');//section production avtohim
 
   $features_style = 'features-style';//переменная для изменения стилей блока features
   $slider_controls_margin ='margin';//переменная для отступа кнопок слайдера
   include_once('./template-parts/features-block.php');
 
-  include_once('./template-parts/manufacturing-block.php');//section manufacturing
-
-  include_once('./template-parts/autochemical-type-block.php');//section autochemical-types
-
+  include_once('./template-parts/distributor-block.php');//section distributor
+  
   $blog_title_style ='blog-title-style';//переменная для изменения стилей заголовка бока blog
   $blog_title ="Исследовательский центр Aliance&nbsp;production";//заголовок блока blog
   $button_link_hidden ='hidden';//blog-content не виден кроме главной страницы
