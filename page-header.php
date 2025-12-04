@@ -145,7 +145,7 @@
   </nav>
   <!-- /.navbar -->
 
-  <header class="page-header page-header-bg-image">
+  <header class="page-header <?= $page_header_bg; ?>">
     <div class="container">
       <div class="page-header-wrapper">
         <div class="page-header-content">

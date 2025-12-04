@@ -69,6 +69,7 @@
     ],
   ];
 
+  $page_header_bg = 'page-header-bg-grey';//bg page-header
   $page_title ='О компании'; //переменная для title и H1
   include_once ('page-header.php');//page-header
 

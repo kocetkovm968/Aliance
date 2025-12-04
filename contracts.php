@@ -5,6 +5,8 @@
     ["path" => "./", "title" => "Главная", "class" => ""],
     ["path" => "./contracts.php", "title" => "Контрактное производство", "class" => "breadcrumbs-link-active"],
   ];
+
+  $page_header_bg = 'page-header-bg-grey';//bg page-header
   $page_title = 'Контрактное производство';//переменная для title и H1
   include_once ('page-header.php');//page-header
 

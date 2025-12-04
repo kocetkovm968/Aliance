@@ -5,6 +5,8 @@
     ["path" => "./", "title" => "Главная", "class" => ""],
     ["path" => "./trademarks.php", "title" => "Собственные торговые марки", "class" => "breadcrumbs-link-active"],
   ];
+
+  $page_header_bg = 'page-header-bg-grey';//bg page-header
   $page_title = 'Собственные торговые марки';//переменная для title и H1
   include_once ('page-header.php'); //page-header
 

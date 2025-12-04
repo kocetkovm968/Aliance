@@ -70,6 +70,7 @@
     ],
   ];
 
+  $page_header_bg = 'page-header-bg-grey';//bg page-header
   $page_title = 'Автомобильная химия';//переменная для title и H1
   $page_header_img = 'img/page-header-img.png';//добавляется изображение к page-header
   $breadcrumbs_margin = 'margin';//переменная для margin хлебных крошек

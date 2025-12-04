@@ -7,6 +7,7 @@
     ["path" => "./trademarks.php/AG-Tech.php", "title" => "Автохимия AG-Tech", "class" => "breadcrumbs-link-active"],
   ];
 
+  //массив для карточек блога
   $news = [
     [
     "path" => "#",
@@ -70,6 +71,7 @@
     ],
   ];
 
+  $page_header_bg = 'page-header-bg-grey';//bg page-header
   $page_title = 'Автохимия AG-Tech';//переменная для title и H1
   $page_header_img = 'img/page-header-img.png';//добавляется изображение к page-header
   $breadcrumbs_margin = 'margin';//переменная для margin хлебных крошек

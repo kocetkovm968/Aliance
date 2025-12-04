@@ -8,7 +8,7 @@
 
   $news = [
     [
-    "path" => "#",
+    "path" => "./news-more.php",
     "image" => "img/blog/blog-photo1.jpg",
     "title" => "Современная методология разработки одухотворила всех причастных",
     "text" => "Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной степени предоставлены...",
@@ -69,6 +69,7 @@
     ],
   ];
 
+  $page_header_bg = 'page-header-bg-grey';//bg page-header
   $page_title = 'Блог';//переменная для title и H1
   $breadcrumbs_margin = 'margin';//переменная для margin хлебных крошек
   include_once ('page-header.php');//page-header
