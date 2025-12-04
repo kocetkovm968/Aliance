@@ -1,7 +1,11 @@
-<section class="section blog">
+<section class="section blog <?= $section_style; ?>">
   <div class="container">
-    <div class="separator"></div>
-    <h2 class="section-title blog-title <?= $blog_title_style; ?>"><?= $blog_title; ?></h2>
+    <?php 
+      if (!empty($block_title)) {
+        echo '<div class="separator"></div>';
+        echo '<h2 class="section-title blog-title '. htmlspecialchars($blog_title_style) .'">'. $block_title .'</h2>';
+      }
+    ?>
 
     <div class="blog-content <?= $blog_content_hidden; ?>">
       <div class="blog-content-column">
@@ -22,86 +26,15 @@
       <!-- Обертка слайдера -->
       <div class="swiper-wrapper">
         <!-- Слайды -->
-        <a href="#" class="swiper-slide blog-card">
-          <img src="img/blog/blog-photo1.jpg" alt="слайд 1" class="blog-card-img <?= $blog_image_position; ?>">
-          <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
-          <p class="blog-card-text">
-            Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной
-            степени предоставлены...
-          </p>
-        </a>
-        <a href="#" class="swiper-slide blog-card">
-          <img src="img/blog/blog-photo2.jpg" alt="слайд 2" class="blog-card-img <?= $blog_image_position; ?>">
-          <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
-          <p class="blog-card-text">
-            Сложно сказать, почему элементы политического процесса функционально разнесены на&nbsp;независимые
-            элементы. Безусловно, высокотехнологичная...
-          </p>
-        </a>
-        <a href="#" class="swiper-slide blog-card">
-          <img src="img/blog/blog-photo2.jpg" alt="слайд 2" class="blog-card-img <?= $blog_image_position; ?>">
-          <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
-          <p class="blog-card-text">
-            Сложно сказать, почему элементы политического процесса функционально разнесены на&nbsp;независимые
-            элементы. Безусловно, высокотехнологичная...
-          </p>
-        </a>
-        <a href="#" class="swiper-slide blog-card">
-          <img src="img/blog/blog-photo1.jpg" alt="слайд 1" class="blog-card-img <?= $blog_image_position; ?>">
-          <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
-          <p class="blog-card-text">
-            Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной
-            степени предоставлены...
-          </p>
-        </a>
-        <a href="#" class="swiper-slide blog-card">
-          <img src="img/blog/blog-photo1.jpg" alt="слайд 1" class="blog-card-img <?= $blog_image_position; ?>">
-          <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
-          <p class="blog-card-text">
-            Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной
-            степени предоставлены...
-          </p>
-        </a>
-        <a href="#" class="swiper-slide blog-card">
-          <img src="img/blog/blog-photo2.jpg" alt="слайд 2" class="blog-card-img <?= $blog_image_position; ?>">
-          <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
-          <p class="blog-card-text">
-            Сложно сказать, почему элементы политического процесса функционально разнесены на&nbsp;независимые
-            элементы. Безусловно, высокотехнологичная...
-          </p>
-        </a>
-        <a href="#" class="swiper-slide blog-card">
-          <img src="img/blog/blog-photo2.jpg" alt="слайд 2" class="blog-card-img <?= $blog_image_position; ?>">
-          <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
-          <p class="blog-card-text">
-            Сложно сказать, почему элементы политического процесса функционально разнесены на&nbsp;независимые
-            элементы. Безусловно, высокотехнологичная...
-          </p>
-        </a>
-        <a href="#" class="swiper-slide blog-card">
-          <img src="img/blog/blog-photo1.jpg" alt="слайд 1" class="blog-card-img <?= $blog_image_position; ?>">
-          <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
-          <p class="blog-card-text">
-            Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной
-            степени предоставлены...
-          </p>
-        </a>
-        <a href="#" class="swiper-slide blog-card">
-          <img src="img/blog/blog-photo1.jpg" alt="слайд 1" class="blog-card-img <?= $blog_image_position; ?>">
-          <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
-          <p class="blog-card-text">
-            Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной
-            степени предоставлены...
-          </p>
-        </a>
-        <a href="#" class="swiper-slide blog-card">
-          <img src="img/blog/blog-photo2.jpg" alt="слайд 2" class="blog-card-img <?= $blog_image_position; ?>">
-          <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
-          <p class="blog-card-text">
-            Сложно сказать, почему элементы политического процесса функционально разнесены на&nbsp;независимые
-            элементы. Безусловно, высокотехнологичная...
-          </p>
-        </a>
+        <?php foreach ($news as $item): ?>
+          <a href="<?= $item['path']; ?>" class="swiper-slide blog-card">
+            <img src="<?= $item['image']; ?>" alt="слайд 1" class="blog-card-img <?= $blog_image_position; ?>">
+            <h3 class="blog-card-title"><?= $item['title']; ?></h3>
+            <p class="blog-card-text">
+              <?= $item['text']; ?>
+            </p>
+          </a>
+        <?php endforeach; ?>
       </div>
 
       <div class="slider-controls-wrapper">

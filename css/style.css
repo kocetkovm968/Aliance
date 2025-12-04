@@ -1214,6 +1214,20 @@ header {
 
 
 
+/* section news */
+/* ============================================================ */
+.news-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.news-card {
+  max-width: 44.0625rem;
+}
+
+
+
 /* footer */
 /* ============================================================ */
 .footer-top {
