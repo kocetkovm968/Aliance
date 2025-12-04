@@ -12,6 +12,25 @@
           </a>
         <?php endforeach; ?>
       </div>
+      <div class="news-buttons">
+        <ul class="new-buttons-list">
+          <li class="new-buttons-item">
+            <a href="#" class="new-buttons-link active">1</a>
+          </li>
+          <li class="new-buttons-item">
+            <a href="#" class="new-buttons-link">2</a>
+          </li>
+          <li class="new-buttons-item">
+            <a href="#" class="new-buttons-link">3</a>
+          </li>
+          <li class="new-buttons-item">
+            <a href="#" class="new-buttons-link">4</a>
+          </li>
+          <li class="new-buttons-item">
+            <a href="#" class="new-buttons-link">5</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
