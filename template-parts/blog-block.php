@@ -1,4 +1,4 @@
-<section class="section blog <?= $section_style; ?>">
+<section class="section blog">
   <div class="container">
     <?php 
       if (!empty($block_title)) {
