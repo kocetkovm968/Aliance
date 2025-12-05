@@ -50,7 +50,7 @@
             <svg class="footer-icon" width="24" height="24">
               <use href="img/sprite.svg#mark"></use>
             </svg>
-            <address class="footer-address">г. Мосвка, Холодильный пер. 4к1с8</address>
+            <address class="footer-address">г. Москва, Холодильный пер. 4к1с8</address>
           </div>
           <div class="footer-info">
             <svg class="footer-icon" width="24" height="24">

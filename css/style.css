@@ -1408,6 +1408,62 @@ header {
 
 
 
+/* section contacts */
+/* ============================================================ */
+.contacts-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 6.25rem;
+}
+
+.contacts-phone {
+  margin-right: 3.9375rem;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 160%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: .375rem;
+  color: #292d33;
+}
+
+.contacts-inner {
+  display: flex;
+  flex: 1;
+}
+
+.contacts-info {
+  display: flex;
+  /* align-items: center; */
+  gap: 15px;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 160%;
+  color: #292d33;
+}
+
+.contacts-info:first-of-type {
+  margin-right: 3.3125rem;
+}
+
+.contacts-social {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.contacts-icon {
+  flex-shrink: 0;
+}
+
+.contacts-image {
+  display: block;
+  width: 100%;
+}
+
+
+
 /* footer */
 /* ============================================================ */
 .footer-top {
@@ -1879,6 +1935,18 @@ header {
 
   .article {
     max-width: 50rem;
+  }
+
+  .contacts-inner {
+    flex-direction: column;
+  }
+
+  .contacts-social {
+    margin-left: 0;
+  }
+
+  .contacts-info:first-of-type {
+    margin-right: 0;
   }
 
   .footer-logo {
@@ -2371,6 +2439,20 @@ header {
     font-size: 14px;
   }
 
+  .contacts-content {
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+
+  .contacts-phone {
+    margin-right: 0;
+    font-size: 32px;
+  }
+
+  .contacts-info {
+    font-size: 20px;
+  }
+
   .footer-top {
     padding-top: 50px;
     padding-bottom: 27px;
@@ -2709,6 +2791,26 @@ header {
     height: 46px;
     font-weight: 700;
     font-size: 14px;
+  }
+
+  .contacts-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .contacts-phone {
+    text-underline-offset: 2px;
+  }
+
+  .contacts-inner {
+    gap: 30px;
+  }
+
+  .contacts-image {
+    height: 500px;
+    object-fit: cover;
+    object-position: right;
   }
 
   .footer-top {
