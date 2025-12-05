@@ -1435,7 +1435,6 @@ header {
 
 .contacts-info {
   display: flex;
-  /* align-items: center; */
   gap: 15px;
   font-weight: 400;
   font-size: 1.375rem;
@@ -1461,6 +1460,21 @@ header {
   display: block;
   width: 100%;
 }
+
+
+
+/* section policy */
+/* ============================================================ */
+.policy-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292d33;
+}
+
+.policy-text:not(:last-of-type) {
+  margin-bottom: 22px;
+}  
 
 
 
