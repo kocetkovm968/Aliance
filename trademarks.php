@@ -13,5 +13,7 @@
   $section_style = 'section-padding';//переменная для измененяи padding секции
   include_once ('./template-parts/trademark-block.php');//section trademark
 
+  include_once('./template-parts\cta-block.php');//section cta
+
   include_once ('footer.php'); 
 ?>

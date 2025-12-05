@@ -15,5 +15,7 @@
 
   include_once('./template-parts/seo-block.php');//section seo
 
+  include_once('./template-parts\cta-block.php');//section cta
+
   include_once ('footer.php'); //footer
 ?>

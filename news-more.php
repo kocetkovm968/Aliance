@@ -83,5 +83,7 @@
   $button_link_hidden ='hidden';//blog-content не виден кроме главной страницы
   include_once('./template-parts/blog-block.php');//section blog
 
+  include_once('./template-parts\cta-block.php');//section cta
+
   include_once ('footer.php');//footer
 ?>

@@ -251,4 +251,6 @@
   include_once('./template-parts/blog-block.php') ?>
   <!-- /.section blog -->
 
+  <?php include_once('./template-parts\cta-block.php');//section cta ?>
+
   <?php include_once ('footer.php'); ?>

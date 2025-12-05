@@ -11,5 +11,7 @@
 
   include_once('./template-parts/contacts-block.php');//section contacts
 
+  include_once('./template-parts\cta-block.php');//section cta
+
   include_once ('footer.php');
 ?>

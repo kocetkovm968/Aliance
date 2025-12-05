@@ -77,14 +77,7 @@
   $section_style = 'section-padding';//переменная для измененяи padding секции
   include_once ('./template-parts/news-block.php');//section news
 
-
-
-
-  // $section_style = 'section-padding';//переменная для измененяи padding секции
-  // $blog_content_hidden = 'hidden';//скрытие blog-content
-  // $button_link_hidden ='hidden';//кнопка load не видна кроме главной страницы
-  // $blog_image_position ='position';//z-index для img слайдера блока blog
-  // include_once ('./template-parts/blog-block.php');//section blog
+  include_once('./template-parts\cta-block.php');//section cta
 
   include_once ('footer.php');
 ?>

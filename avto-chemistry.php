@@ -97,5 +97,7 @@
 
   include_once ('./template-parts/clients-block.php');//section clients
 
+  include_once('./template-parts\cta-block.php');//section cta
+
   include_once ('footer.php');
 ?>
