@@ -2538,12 +2538,24 @@ header {
     margin-bottom: 5px;
     width: 20px;
     height: 1px;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    background-color: #292D33;
     transition: transform 0.2s;
   }
 
   .burger-line:nth-child(2) {
     width: 15px;
+  }
+
+  /* Темные при открытом меню */
+  .burger-dark .burger-line {
+    background-color: #292D33 !important;
+  }
+
+  /* Специфический стиль для страницы index.html */
+  [data-page-type='front-page'] .burger-line {
+    background-color: #FFFFFF;
+    /* Стартовый цвет на главной */
   }
 
   .navbar-light .burger-line {
@@ -3018,3 +3030,11 @@ header {
     height: 100%;
   }
 }
+
+/* 
+<?php include_once('./template-parts\mobile_menu-block.php') ?>
+< !-- /.mobile-menu -->
+
+<?php include_once('./template-parts\navbar-block.php') ?>
+< !-- /.navbar -->
+*/

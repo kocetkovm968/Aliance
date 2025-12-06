@@ -99,7 +99,7 @@
   </div>
   <!-- /.mobile-menu -->
 
-  <nav class="navbar">
+  <nav class="navbar" data-page-type="front-page">
     <button class="burger">
       <span class="burger-line"></span>
       <span class="burger-line"></span>

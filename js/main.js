@@ -7,20 +7,47 @@ const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.mobile-menu');
 
 
+// Получаем тип страницы
+const pageType = navbar.getAttribute('data-page-type') || '';
+
+
 const screenWidth = window.innerWidth;//переменная отслеживающая ширину окна браузера
 const isFront = document.body.classList.contains('front-page');//переменная для проверки находимся на главной странице или нет
 
 
+// Функции переключения цветов у burger
+const setBurgerColorWhite = () => {
+  //если открыта первая страница а не остальные
+  if (!pageType.includes('other-pages')) {
+    //добавляем класс для изменения цвета линий burgera
+    burger.classList.add('burger-dark');
+  }
+};
+
+const resetBurgerColor = () => {
+  //если открыта первая страница а не остальные
+  if (!pageType.includes('other-pages')) {
+    //удаляем класс для изменения цвета линий burgera
+    burger.classList.remove('burger-dark');
+  }
+};
 
 
 //Функция изменения navbar на светлый
 const lightModeOn = (event) => {
-  navbar.classList.add('navbar-light');
+  //если открыта первая страница а не остальные
+  if (!pageType.includes('other-pages')) {
+    navbar.classList.add('navbar-light');
+  }
 };
 
 //Функция изменения navbar на исходный
 const lightModeOff = (event) => {
-  navbar.classList.remove('navbar-light');
+  //если открыта первая страница а не остальные
+  if (!pageType.includes('other-pages')) {
+    navbar.classList.remove('navbar-light');
+  }
+  
 };
 
 //Функция для изменения высоты Navbar
@@ -35,6 +62,7 @@ const openMenu = (event) => {
   burger.classList.add('burger-close');
   document.body.style.overflow = 'hidden'; //запрещаем прокрутку сайта под мобильным меню
   lightModeOn();
+  setBurgerColorWhite(); // Меняем цвет, если страница главная
 };
 
 //Функция закрытия меню
@@ -43,6 +71,7 @@ const closeMenu = (event) => {
   burger.classList.remove('burger-close');
   document.body.style.overflow = ''; //разрешает прокрутку сайта под меню
   lightModeOff();
+  resetBurgerColor(); // Возвращаем цвет, если страница главная
 };
 
 
