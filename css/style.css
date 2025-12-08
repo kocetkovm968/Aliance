@@ -450,7 +450,6 @@ header {
 
 .section-title {
   margin-top: 1.5rem;
-  /* margin-top: 30px; */
   margin-bottom: 50px;
   font-family: 'Bebas Neue Regular', sans-serif;
   font-weight: 400;
@@ -487,7 +486,6 @@ header {
 
 .steps-title {
   margin-top: 2.0625rem;
-  /* margin-top: 30px; */
   margin-bottom: 10px;
   max-width: 18.75rem;
   font-weight: 400;
@@ -691,7 +689,6 @@ header {
 
 .clients-title {
   margin-bottom: 2.6875rem;
-  /* margin-bottom: 2.375rem; */
 }
 
 .clients-content-wrapper {
@@ -883,9 +880,7 @@ header {
 
 .cta-form-text {
   margin-top: 1.5625rem;
-  /* margin-top: 1.25rem; */
   margin-bottom: 3.125rem;
-  /* margin-bottom: 2.625rem; */
   max-width: 640px;
   font-weight: 400;
   font-size: 1rem;
@@ -976,7 +971,6 @@ header {
 
 .notify {
   display: flex;
-  /* align-items: center; */
   gap: 10px;
 }
 
@@ -1613,7 +1607,6 @@ header {
   display: flex;
   justify-content: space-between;
   width: 36.8125rem;
-  /* width: 35.5625rem; */
 }
 
 .footer-menu-list {
@@ -2613,7 +2606,6 @@ header {
     margin-bottom: 5px;
     width: 20px;
     height: 1px;
-    /* background-color: #FFFFFF; */
     background-color: #292D33;
     transition: transform 0.2s;
   }
@@ -2629,8 +2621,7 @@ header {
 
   /* Специфический стиль для страницы index.html */
   [data-page-type='front-page'] .burger-line {
-    background-color: #FFFFFF;
-    /* Стартовый цвет на главной */
+    background-color: #FFFFFF; /* Стартовый цвет на главной */
   }
 
   .navbar-light .burger-line {
