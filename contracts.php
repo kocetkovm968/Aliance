@@ -10,6 +10,8 @@
   $page_title = 'Контрактное производство';//переменная для title и H1
   include_once ('page-header.php');//page-header
 
+  include_once('./template-parts\page_header-block.php');//.page_header-block
+
   $section_style = 'section-padding';//переменная для изменения padding блоков
   include_once('./template-parts/contracts-block.php');//section contracts
 

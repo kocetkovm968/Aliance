@@ -73,6 +73,8 @@
   $page_title ='О компании'; //переменная для title и H1
   include_once ('page-header.php');//page-header
 
+  include_once('./template-parts\page_header-block.php');//.page_header-block
+
   include_once ('./template-parts/experts-block.php');//section experts
 
   $features_style ='features-style';//переменная для изменения стилей блока features

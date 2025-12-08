@@ -1483,6 +1483,56 @@ header {
 
 
 
+/* section error */
+/* ============================================================ */
+.error {
+  padding-top: 13.4375rem;
+  padding-bottom: 9.375rem;
+}
+
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 31.875rem;
+}
+
+.error-number {
+  margin-bottom: 1.9375rem;
+  font-family: 'Bebas Neue Regular', sans-serif;
+  font-weight: 400;
+  font-size: 18.75rem;
+  line-height: 100%;
+  color: #5c8ee5;
+}
+
+.error-title {
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  text-align: center;
+  color: #292d33;
+}
+
+.error-text {
+  margin-bottom: 1.875rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  text-align: center;
+  color: #292d33;
+}
+
+.error-button {
+  text-align: center;
+}
+
+
+
 /* footer */
 /* ============================================================ */
 .footer-top {
@@ -2485,6 +2535,31 @@ header {
     padding-bottom: 100px;
   }
 
+  .error {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .error-number {
+    margin-bottom: 17px;
+    font-size: 200px;
+  }
+
+  .error-title {
+    font-size: 20px;
+  }
+
+  .error-text {
+    margin-bottom: 50px;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+  }
+
+  .error-button {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
   .footer-top {
     padding-top: 50px;
     padding-bottom: 27px;
@@ -3019,6 +3094,10 @@ header {
   .page-header-title {
     overflow-wrap: break-word;
   }
+
+  .error-button {
+    width: 100%;
+  }
 }
 
 
@@ -3030,11 +3109,3 @@ header {
     height: 100%;
   }
 }
-
-/* 
-<?php include_once('./template-parts\mobile_menu-block.php') ?>
-< !-- /.mobile-menu -->
-
-<?php include_once('./template-parts\navbar-block.php') ?>
-< !-- /.navbar -->
-*/

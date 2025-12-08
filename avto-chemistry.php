@@ -76,6 +76,8 @@
   $breadcrumbs_margin = 'margin';//переменная для margin хлебных крошек
   include_once ('page-header.php');//page-header
 
+  include_once('./template-parts\page_header-block.php');//.page_header-block
+
   $section_style = 'section-padding';//переменная для изменения padding блоков
   include_once ('template-parts\prduction-avtohim-block.php');//section production avtohim
 
