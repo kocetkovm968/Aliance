@@ -1,5 +1,9 @@
 /* Global styles */
 /* ============================================================ */
+@import url("https: //fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("normalize.css"); 
+@import url("swiper-bundle.min.css");
+
 *,
 *::after,
 *::before {
@@ -243,9 +247,13 @@ header {
   padding-top: 5.875rem;
 }
 
+.no-webp .header-image {
+  background-image: url('../img/header-bg.png');
+}
+
 .header-image {
   position: relative;
-  background-image: url('../img/header-bg.png');
+  background-image: url('../img/header-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
