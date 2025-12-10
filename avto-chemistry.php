@@ -7,68 +7,7 @@
     ["path" => "./contracts.php/avto-chemistry.php", "title" => "Автомобильная химия", "class" => "breadcrumbs-link-active"],
   ];
 
-  $news = [
-    [
-    "path" => "#",
-    "image" => "img/blog/blog-photo1.jpg",
-    "title" => "Современная методология разработки одухотворила всех причастных",
-    "text" => "Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной степени предоставлены...",
-    ],
-    [
-    "path" => "#",
-    "image" => "img/blog/blog-photo2.jpg",
-    "title" => "Сложно сказать, почему жизнь прекрасна",
-    "text" => "Сложно сказать, почему элементы политического процесса функционально разнесены на&nbsp;независимые элементы. Безусловно, высокотехнологичная...",
-    ],
-    [
-    "path" => "#",
-    "image" => "img/blog/blog-photo2.jpg",
-    "title" => "Сложно сказать, почему жизнь прекрасна",
-    "text" => "Сложно сказать, почему элементы политического процесса функционально разнесены на&nbsp;независимые элементы. Безусловно, высокотехнологичная...",
-    ],
-    [
-    "path" => "#",
-    "image" => "img/blog/blog-photo1.jpg",
-    "title" => "Современная методология разработки одухотворила всех причастных",
-    "text" => "Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной степени предоставлены...",
-    ],
-    [
-    "path" => "#",
-    "image" => "img/blog/blog-photo1.jpg",
-    "title" => "Современная методология разработки одухотворила всех причастных",
-    "text" => "Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной степени предоставлены...",
-    ],
-    [
-    "path" => "#",
-    "image" => "img/blog/blog-photo2.jpg",
-    "title" => "Сложно сказать, почему жизнь прекрасна",
-    "text" => "Сложно сказать, почему элементы политического процесса функционально разнесены на&nbsp;независимые элементы. Безусловно, высокотехнологичная...",
-    ],
-    [
-    "path" => "#",
-    "image" => "img/blog/blog-photo2.jpg",
-    "title" => "Сложно сказать, почему жизнь прекрасна",
-    "text" => "Сложно сказать, почему элементы политического процесса функционально разнесены на&nbsp;независимые элементы. Безусловно, высокотехнологичная...",
-    ],
-    [
-    "path" => "#",
-    "image" => "img/blog/blog-photo1.jpg",
-    "title" => "Современная методология разработки одухотворила всех причастных",
-    "text" => "Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной степени предоставлены...",
-    ],
-    [
-    "path" => "#",
-    "image" => "img/blog/blog-photo1.jpg",
-    "title" => "Современная методология разработки одухотворила всех причастных",
-    "text" => "Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной степени предоставлены...",
-    ],
-    [
-    "path" => "#",
-    "image" => "img/blog/blog-photo2.jpg",
-    "title" => "Сложно сказать, почему жизнь прекрасна",
-    "text" => "Сложно сказать, почему элементы политического процесса функционально разнесены на&nbsp;независимые элементы. Безусловно, высокотехнологичная...",
-    ],
-  ];
+  include_once ('array.php');//файл с массивами
 
   $page_header_bg = 'page-header-bg-grey';//bg page-header
   $page_title = 'Автомобильная химия';//переменная для title и H1
@@ -76,10 +15,10 @@
   $breadcrumbs_margin = 'margin';//переменная для margin хлебных крошек
   include_once ('page-header.php');//page-header
 
-  include_once('./template-parts\page_header-block.php');//.page_header-block
+  include_once('./template-parts/page_header-block.php');//.page_header-block
 
   $section_style = 'section-padding';//переменная для изменения padding блоков
-  include_once ('template-parts\prduction-avtohim-block.php');//section production avtohim
+  include_once ('template-parts/prduction-avtohim-block.php');//section production avtohim
 
   $features_style = 'features-style';//переменная для изменения стилей блока features
   $slider_controls_margin ='margin';//переменная для отступа кнопок слайдера
@@ -99,7 +38,7 @@
 
   include_once ('./template-parts/clients-block.php');//section clients
 
-  include_once('./template-parts\cta-block.php');//section cta
+  include_once('./template-parts/cta-block.php');//section cta
 
   include_once ('footer.php');
 ?>

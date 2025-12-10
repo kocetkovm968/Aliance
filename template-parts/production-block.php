@@ -1,7 +1,11 @@
 <section class="section production">
   <div class="container">
     <div class="production-wrapper production-wrapper-reverse">
-      <img src="img/production-img.jpg" alt="Картинка блока" class="production-img">
+      <picture class="production-img">
+        <source type="image/webp" srcset="img/production-img.webp">
+        <source type="image/jpeg" srcset="img/production-img.jpg">
+        <img src="img/production-img.jpg" alt="Картинка блока">
+      </picture>
       <div class="production-content">
         <div class="production-content-header">
           <div class="separator production-separator"></div>

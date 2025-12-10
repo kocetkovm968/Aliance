@@ -1,7 +1,11 @@
 <section class="section production avtohim <?= $section_style; ?>">
   <div class="container">
     <div class="production-wrapper">
-      <img src="img/production-img2.jpg" alt="Картинка блока" class="production-img avtohim-img">
+      <picture class="production-img avtohim-img">
+        <source type="image/webp" srcset="img/production-img2.webp">
+        <source type="image/jpeg" srcset="img/production-img2.jpg">
+        <img src="img/production-img2.jpg" alt="Картинка блока">
+      </picture>
       <div class="production-content">
         <div class="separator production-separator"></div>
         <h2 class="section-title avtohim-title">Контрактное производство автомобильной&nbsp;химии</h2>

@@ -43,7 +43,11 @@
         Скачать каталог
       </button>
     </div>
-    <img src="img/distributor.png" alt="" class="distributor-img">
+    <picture class="distributor-img">
+      <source type="image/webp" srcset="img/distributor.webp">
+      <source type="image/png" srcset="img/distributor.png">
+      <img src="img/distributor.png" alt="Каталог дистрибьютора">
+    </picture>
   </div>
 </section>
 <!-- /.section distributor -->

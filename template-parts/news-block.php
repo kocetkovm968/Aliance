@@ -4,7 +4,11 @@
       <div class="news-content">
         <?php foreach ($news as $item): ?>
           <a href="<?= $item['path']; ?>" class="blog-card news-card">
-            <img src="<?= $item['image']; ?>" alt="слайд 1" class="blog-card-img <?= $blog_image_position; ?>">
+            <picture class="blog-card-img <?= $blog_image_position; ?>">
+              <source type="image/webp" srcset="<?= $item['picture']; ?>">
+              <source type="image/jpeg" srcset="<?= $item['image']; ?>">
+              <img src="<?= $item['image']; ?>" alt="слайд 1">
+            </picture>
             <h3 class="blog-card-title"><?= $item['title']; ?></h3>
             <p class="blog-card-text">
               <?= $item['text']; ?>
@@ -33,6 +37,5 @@
       </div>
     </div>
   </div>
-
 </section>
 <!-- /.section news -->

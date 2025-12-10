@@ -1,7 +1,11 @@
 <section class="section experts section-padding">
   <div class="container">
     <div class="experts-wrapper">
-      <img src="img/experts-img.png" alt="Картинка блока" class="experts-img">
+      <picture class="experts-img">
+        <source type="image/webp" srcset="img/experts-img.webp">
+        <source type="image/png" srcset="img/experts-img.png">
+        <img src="img/experts-img.png" alt="изображение секции">
+      </picture>
       <div class="experts-content">
         <div class="separator"></div>
         <h2 class="section-title experts-title">мы&nbsp;- эксперты в&nbsp;области производства&nbsp;химии</h2>

@@ -10,12 +10,12 @@
   $page_title = 'Собственные торговые марки';//переменная для title и H1
   include_once ('page-header.php'); //page-header
 
-  include_once('./template-parts\page_header-block.php');//.page_header-block
+  include_once('./template-parts/page_header-block.php');//.page_header-block
 
   $section_style = 'section-padding';//переменная для измененяи padding секции
   include_once ('./template-parts/trademark-block.php');//section trademark
 
-  include_once('./template-parts\cta-block.php');//section cta
+  include_once('./template-parts/cta-block.php');//section cta
 
   include_once ('footer.php'); 
 ?>

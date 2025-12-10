@@ -33,6 +33,10 @@
         </ul>
       </div>
     </div>
-    <img src="img\map.png" alt="карта распооложения" class="contacts-image">
+    <picture class="contacts-image">
+      <source type="image/webp" srcset="img\map.webp">
+      <source type="image/png" srcset="img\map.png">
+      <img src="img\map.png" alt="карта распооложения">
+    </picture>
   </div>
 </section>

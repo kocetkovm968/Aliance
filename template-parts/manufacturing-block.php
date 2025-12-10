@@ -61,7 +61,11 @@
         </ul>
       </div>
     </div>
-    <img src="img\manufacturing.jpg" alt="изображение секции" class="manufacturing-img">
+    <picture class="manufacturing-img">
+      <source type="image/webp" srcset="img\manufacturing.webp">
+      <source type="image/jpeg" srcset="img\manufacturing.jpg">
+      <img src="img\manufacturing.jpg" alt="изображение секции">
+    </picture>
   </div>
 </section>
 <!-- /.section manufacturing -->

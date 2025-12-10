@@ -1,6 +1,10 @@
 <section class="section founder">
   <div class="founder-wrapper">
-    <img src="img/founder.jpg" alt="Фотография основателя" class="founder-img">
+    <picture class="founder-img">
+      <source type="image/webp" srcset="img/founder.webp">
+      <source type="image/jpeg" srcset="img/founder.jpg">
+      <img src="img/founder.jpg" alt="Фотография оснвоателя">
+    </picture>
     <div class="founder-content <?= $founder_content_padding; ?>">
       <div class="separator"></div>
       <h2 class="section-title founder-title">Отношение к&nbsp;делу и&nbsp;к&nbsp;клиентам</h2>

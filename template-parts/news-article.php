@@ -54,7 +54,11 @@
           <p class="article-text article-text-margin">
             Разнообразный и&nbsp;богатый опыт начало повседневной работы по&nbsp;формированию позиции позволяет оценить значение позиций, занимаемых участниками в&nbsp;отношении поставленных задач. Разнообразный и&nbsp;богатый опыт реализация намеченных плановых заданий позволяет выполнять важные задания по&nbsp;разработке форм развития. Задача организации, в&nbsp;особенности&nbsp;же постоянный <span>количественный рост</span> и&nbsp;сфера нашей активности обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании форм развития.
           </p>
-          <img src="img\article_img.jpg" alt="изображение статьи" class="article-image">
+          <picture class="article-image">
+            <source type="image/webp" srcset="img\article_img.webp">
+            <source type="image/jpeg" srcset="img\article_img.jpg">
+            <img src="img\article_img.jpg" alt="изображение статьи">
+          </picture>
         </div>
         <div class="article-inner">
           <h3 class="article-subtitle article-subtitle-xs">Равным образом консультация с широким активом:</h3>
