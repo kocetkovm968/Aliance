@@ -1,7 +1,7 @@
 /* Global styles */
 /* ============================================================ */
 @import url("https: //fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("normalize.css"); 
+@import url("normalize.css");
 @import url("swiper-bundle.min.css");
 
 *,
@@ -1790,40 +1790,42 @@ header {
 
 /* hover */
 /* ============================================================ */
-.header-nav-link:hover::after {
-  transform: scaleX(1);
-}
+@media (any-hover: hover) {
+  .header-nav-link:hover::after {
+    transform: scaleX(1);
+  }
 
-.button-link:hover::before {
-  width: 60px;
-}
+  .button-link:hover::before {
+    width: 60px;
+  }
 
-.card:hover {
-  border: 1px solid #5c8ee5;
-}
+  .card:hover {
+    border: 1px solid #5c8ee5;
+  }
 
-.card:hover .card-title {
-  color: #5c8ee5;
-}
+  .card:hover .card-title {
+    color: #5c8ee5;
+  }
 
-.trademark-card:hover {
-  border: 1px solid #5c8ee5;
-}
+  .trademark-card:hover {
+    border: 1px solid #5c8ee5;
+  }
 
-.trademark-card:hover .trademark-card-title {
-  color: #5c8ee5;
-}
+  .trademark-card:hover .trademark-card-title {
+    color: #5c8ee5;
+  }
 
-.trademark-card:hover .trademark-card-icon {
-  fill: #5c8ee5;
-}
+  .trademark-card:hover .trademark-card-icon {
+    fill: #5c8ee5;
+  }
 
-.clients-logo-item:hover {
-  filter: grayscale(0);
-}
+  .clients-logo-item:hover {
+    filter: grayscale(0);
+  }
 
-.aside-social-item:hover {
-  border-color: #5c8ee5;
+  .aside-social-item:hover {
+    border-color: #5c8ee5;
+  }
 }
 
 
@@ -2630,7 +2632,8 @@ header {
 
   /* Специфический стиль для страницы index.html */
   [data-page-type='front-page'] .burger-line {
-    background-color: #FFFFFF; /* Стартовый цвет на главной */
+    background-color: #FFFFFF;
+    /* Стартовый цвет на главной */
   }
 
   .navbar-light .burger-line {
