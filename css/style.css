@@ -10,10 +10,6 @@
   box-sizing: border-box;
 }
 
-/* 
-<img src="<?= $item['image']; ?>" alt="слайд 1" class="blog-card-img <?= $blog_image_position; ?>">
-*/
-
 html {
   font-size: 16px;
 }
