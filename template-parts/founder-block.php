@@ -1,9 +1,10 @@
 <section class="section founder">
+  <!-- <div class="founder-wrapper"> -->
   <div class="founder-wrapper">
     <picture class="founder-img">
       <source type="image/webp" srcset="img/founder.webp">
       <source type="image/jpeg" srcset="img/founder.jpg">
-      <img src="img/founder.jpg" alt="Фотография оснвоателя">
+      <img src="img/founder.jpg" alt="Фотография основателя" width="840" height="660">
     </picture>
     <div class="founder-content <?= $founder_content_padding; ?>">
       <div class="separator"></div>
