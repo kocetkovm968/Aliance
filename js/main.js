@@ -187,8 +187,8 @@ const blogSlider = new Swiper('.blog-slider', {
     prevEl: ".blog .slider-button-prev",
   },
   breakpoints: {
-    // when window width is >= 769px
-    769: {
+    // when window width is >= 993px
+    993: {
       slidesPerView: 2,
     },
   },
