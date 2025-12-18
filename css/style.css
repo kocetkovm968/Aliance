@@ -570,6 +570,8 @@ header {
   transition: border 0.2s;
 }
 
+
+
 .card-content {
   padding-top: 2.5rem;
   padding-left: 3.125rem;
@@ -594,10 +596,8 @@ header {
 }
 
 .card-image {
-  display: block;
   align-self: flex-end;
   margin-top: auto;
-  max-width: 100%;
 }
 
 
@@ -2176,10 +2176,6 @@ header {
 
   .card {
     --elems: 2;
-  }
-
-  .card-image {
-    max-height: 220px;
   }
 
   .card-title {

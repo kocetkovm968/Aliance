@@ -18,7 +18,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/avto-him.webp">
           <source type="image/png" srcset="img/avto-him.png">
-          <img src="img/avto-him.png" alt="Автомобильная химия">
+          <img src="img/avto-him.png" alt="Автомобильная химия" width="480" height="300">
         </picture>
       </a>
       <a href="#" class="card">
@@ -32,7 +32,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/bit-him.webp">
           <source type="image/png" srcset="img/bit-him.png">
-          <img src="img/bit-him.png" alt="<Бытовая химия">
+          <img src="img/bit-him.png" alt="<Бытовая химия" width="480" height="300">
         </picture>
       </a>
       <a href="#" class="card">
@@ -45,7 +45,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/dezinfect.webp">
           <source type="image/png" srcset="img/dezinfect.png">
-          <img src="img/dezinfect.png" alt="Дезинфицирующие средства">
+          <img src="img/dezinfect.png" alt="Дезинфицирующие средства" width="480" height="300">
         </picture>
       </a>
       <a href="#" class="card">
@@ -58,7 +58,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/dezinfect.webp">
           <source type="image/png" srcset="img/dezinfect.png">
-          <img src="img/dezinfect.png" alt="Пищевые аэрозоли">
+          <img src="img/dezinfect.png" alt="Пищевые аэрозоли" width="480" height="300">
         </picture>
       </a>
       <a href="#" class="card">
@@ -71,7 +71,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/avto-him.webp">
           <source type="image/png" srcset="img/avto-him.png">
-          <img src="img/avto-him.png" alt="Косметическая продукция">
+          <img src="img/avto-him.png" alt="Косметическая продукция" width="480" height="300">
         </picture>
       </a>
       <a href="#" class="card">
@@ -85,7 +85,7 @@
         <picture class="card-image">
           <source type="image/webp" srcset="img/bit-him.webp">
           <source type="image/png" srcset="img/bit-him.png">
-          <img src="img/bit-him.png" alt="Краски аэрозольные">
+          <img src="img/bit-him.png" alt="Краски аэрозольные" width="480" height="300">
         </picture>
       </a>
     </div>
