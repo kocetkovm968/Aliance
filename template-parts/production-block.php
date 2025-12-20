@@ -4,7 +4,7 @@
       <picture class="production-img">
         <source type="image/webp" srcset="img/production-img.webp">
         <source type="image/jpeg" srcset="img/production-img.jpg">
-        <img src="img/production-img.jpg" alt="Картинка блока">
+        <img src="img/production-img.jpg" alt="Картинка блока" width="600" height="750">
       </picture>
       <div class="production-content">
         <div class="production-content-header">
