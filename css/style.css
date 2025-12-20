@@ -1007,12 +1007,11 @@ header {
 }
 
 .experts-img {
-  display: block;
-  width: 30rem;
-  height: 30rem;
+  max-width: 30rem;
 }
 
 .experts-content {
+  flex: 1;
   padding-top: 3.125rem;
 }
 
@@ -2297,7 +2296,6 @@ header {
   .experts-img {
     align-self: center;
     max-width: 345px;
-    max-height: 345px;
   }
 
   .experts-content {
@@ -3103,15 +3101,5 @@ header {
 
   .error-button {
     width: 100%;
-  }
-}
-
-
-@media (max-width: 320px) {
-
-  /* ============================== */
-  .experts-img {
-    width: 100%;
-    height: 100%;
   }
 }

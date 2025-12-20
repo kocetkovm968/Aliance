@@ -4,7 +4,7 @@
       <picture class="experts-img">
         <source type="image/webp" srcset="img/experts-img.webp">
         <source type="image/png" srcset="img/experts-img.png">
-        <img src="img/experts-img.png" alt="изображение секции">
+        <img src="img/experts-img.png" alt="изображение секции" width="480" height="480">
       </picture>
       <div class="experts-content">
         <div class="separator"></div>
