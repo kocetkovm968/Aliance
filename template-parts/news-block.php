@@ -7,12 +7,14 @@
             <picture class="blog-card-img <?= $blog_image_position; ?>">
               <source type="image/webp" srcset="<?= $item['picture']; ?>">
               <source type="image/jpeg" srcset="<?= $item['image']; ?>">
-              <img src="<?= $item['image']; ?>" alt="слайд 1">
+              <img src="<?= $item['image']; ?>" alt="слайд 1" width="720" height="400">
             </picture>
-            <h3 class="blog-card-title"><?= $item['title']; ?></h3>
-            <p class="blog-card-text">
-              <?= $item['text']; ?>
-            </p>
+            <div class="blog-card-content">
+              <h3 class="blog-card-title"><?= $item['title']; ?></h3>
+              <p class="blog-card-text">
+                <?= $item['text']; ?>
+              </p>
+            </div>
           </a>
         <?php endforeach; ?>
       </div>
